@@ -19,7 +19,10 @@ const styles = theme => ({
   },
   topmargin: {
     marginTop: 100,
-  }
+  },
+  smalltopmargin: {
+    marginTop: 4,
+  },
 });
 
 function App(props) {
@@ -35,7 +38,7 @@ function App(props) {
             <ResultsList />
           </Grid>
         </Grid>
-        <Grid item xs={6} container spacing={0} direction="column">
+        <Grid item xs={6} container spacing={8} direction="column" className={classes.smalltopmargin}>
           <Grid item xs={6} className='Full-width'>
             <InfoCard />
           </Grid>

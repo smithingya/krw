@@ -9,6 +9,9 @@ import GridListTile from '@material-ui/core/GridListTile'
 import image from '../Img/bonobo.jpg'
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
+import Card from '@material-ui/core/Card'
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
 
 const styles = theme => ({
   root: {
@@ -30,14 +33,24 @@ transform: 'translateX(-50%)',
 function InfoCard(props){
   const { classes } = props;
   return(
-    <Grid container className='Full-width'>
-      <Grid item xs={3}>
-        Image
+    <Card className='Full-height'>
+      <Grid container spacing={0} className='Full-height'>
+        <Grid item xs={4}>
+          <CardMedia image={image} className='Full-height'/>
+        </Grid>
+        <Grid item className='Full-height'>
+          <CardContent className='Full-height'>
+            Animal Name <br />
+            Animal taxonomy: kingdom, phylum, etc.<br />
+            Habitats<br />
+            Endangerement level<br />
+            Threats<br />
+            Conservation measures<br />
+
+          </CardContent>
+        </Grid>
       </Grid>
-      <Grid item>
-        Info
-      </Grid>
-    </Grid>
+    </Card>
   )
 }
 

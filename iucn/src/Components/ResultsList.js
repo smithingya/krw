@@ -20,7 +20,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: 600,
+    maxWidth: 600,
     height: '100%',
   },
   icon: {
@@ -88,7 +88,7 @@ function ResultsList(props) {
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
+              subtitle={<span>IUCN Category: {tile.author}</span>}
               actionIcon={
                 <IconButton className={classes.icon}>
                   <InfoIcon />
