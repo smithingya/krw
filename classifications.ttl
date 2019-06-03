@@ -1,0 +1,1635 @@
+@prefix nc: <http://iucn-knowledge-graph.org/class/> .
+@prefix np: <http://iucn-knowledge-graph.org/property/> .
+@prefix nr: <http://iucn-knowledge-graph.org/resource/> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nr:N53c1a556950041baa4cf50a65eeae4da a nc:Habitat ;
+    np:hasCode "18."^^xsd:string ;
+    np:hasLabel "Unknown"^^xsd:string .
+
+nr:N61706304285f4131918f62caf33f241d a nc:Habitat ;
+    np:hasCode "16."^^xsd:string ;
+    np:hasLabel "Introduced Vegetation"^^xsd:string .
+
+nr:Nd878b1f3abc849ae93e5a46bfae904ff a nc:Habitat ;
+    np:hasCode "6."^^xsd:string ;
+    np:hasLabel "Rocky Areas (e.g., inland cliffs, mountain peaks)"^^xsd:string .
+
+nr:Nea9327ee223c498ab02af75358ac24dd a nc:Habitat ;
+    np:hasCode "17."^^xsd:string ;
+    np:hasLabel "Other"^^xsd:string .
+
+nr:N007e10c5d50243868cb445d15bbce6e9 a nc:Habitat ;
+    np:hasCode "2.1."^^xsd:string ;
+    np:hasLabel "Savanna – Dry"^^xsd:string ;
+    ns1:broader nr:N719e3578db284ba28589b9d169e34f8a .
+
+nr:N009443a68ce8418284263ad990c41997 a nc:Measure ;
+    np:hasCode "3.1.2."^^xsd:string ;
+    np:hasLabel "Trade management"^^xsd:string ;
+    ns1:broader nr:N20e01b7f145e46a59aabc98670efa05d .
+
+nr:N02ac0ff82d8d4959b400cfef30e1e7a6 a nc:Habitat ;
+    np:hasCode "15.5."^^xsd:string ;
+    np:hasLabel "Excavations (open)"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N02e638cd52294f158b82745597a6712a a nc:Measure ;
+    np:hasCode "6.5."^^xsd:string ;
+    np:hasLabel "Non-monetary values"^^xsd:string ;
+    ns1:broader nr:N0156ebccf6284bcd9de318c2a808e6ee .
+
+nr:N03eb46d62712486a94b00024f4398d67 a nc:Threat ;
+    np:hasCode "8.4.2."^^xsd:string ;
+    np:hasLabel "Named species"^^xsd:string ;
+    ns1:broader nr:N97189cc29997413a82f007d6fac0770a .
+
+nr:N044808705a7347208faa35a9498838ac a nc:Threat ;
+    np:hasCode "11.4."^^xsd:string ;
+    np:hasLabel "Storms & flooding"^^xsd:string ;
+    ns1:broader nr:N84b904bb3719409580d037a0e517bd83 .
+
+nr:N064fb5212c7c4011bf575d54cb727345 a nc:Threat ;
+    np:hasCode "7.2.7."^^xsd:string ;
+    np:hasLabel "Abstraction of ground water (agricultural use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:N06ee34a38d37414b8eba00d97caa5847 a nc:Habitat ;
+    np:hasCode "4.2."^^xsd:string ;
+    np:hasLabel "Grassland – Subarctic"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:N07cab4917ff14420a99f4a50b52410be a nc:Threat ;
+    np:hasCode "8.1.1."^^xsd:string ;
+    np:hasLabel "Unspecified species"^^xsd:string ;
+    ns1:broader nr:N587254e86cec478cb2f865655e8fc470 .
+
+nr:N08c78cb5ca9a41a7b3b297a8f10052a0 a nc:Habitat ;
+    np:hasCode "1.2."^^xsd:string ;
+    np:hasLabel "Forest – Subarctic"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:N094effc35333457089a078fa82a87d7c a nc:Habitat ;
+    np:hasCode "15.12."^^xsd:string ;
+    np:hasLabel "Mariculture Cages"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N0afe6074b065456d89ffc99e3da626ed a nc:Threat ;
+    np:hasCode "5.4.5."^^xsd:string ;
+    np:hasLabel "Persecution/control"^^xsd:string ;
+    ns1:broader nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:N0bcaa19052b84fac8fb964b41afd02c5 a nc:Habitat ;
+    np:hasCode "10.1."^^xsd:string ;
+    np:hasLabel "Epipelagic (0–200 m)"^^xsd:string ;
+    ns1:broader nr:N4e8ce42c696542dea59b34f0afde1356 .
+
+nr:N0fe4495bcca844828edcb94d358a820f a nc:Habitat ;
+    np:hasCode "4.1."^^xsd:string ;
+    np:hasLabel "Grassland – Tundra"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:N12267d2d28f1416998b53941859cd525 a nc:Threat ;
+    np:hasCode "3.3."^^xsd:string ;
+    np:hasLabel "Renewable energy"^^xsd:string ;
+    ns1:broader nr:N76285a768d324f21ae113159b31d9ac1 .
+
+nr:N130a51955bff47cfa7953e5ae30e0410 a nc:Threat ;
+    np:hasCode "5.1.2."^^xsd:string ;
+    np:hasLabel "Unintentional effects (species being assessed is not the target)"^^xsd:string ;
+    ns1:broader nr:N6908e4c2a5784177b9c79b68fe73b2df .
+
+nr:N13f388a297dd46358a2037553ccaff62 a nc:Threat ;
+    np:hasCode "9.2.1."^^xsd:string ;
+    np:hasLabel "Oil spills"^^xsd:string ;
+    ns1:broader nr:Nc975f22823b74b158b5673e06a90c0e5 .
+
+nr:N14ca7fed11e048ef81d1812b75407e5f a nc:Habitat ;
+    np:hasCode "5.17."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Seasonal/intermittent saline, brackish or alkaline marshes/pools"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N1555d28b06444221b5122002d496fd35 a nc:Threat ;
+    np:hasCode "7.2.5."^^xsd:string ;
+    np:hasLabel "Abstraction of ground water (domestic use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:N1587de611c52434da1db2bac0c6a7bc4 a nc:Habitat ;
+    np:hasCode "15.1."^^xsd:string ;
+    np:hasLabel "Water Storage Areas [over 8 ha]"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N17a26eb49444482b8d8ee4121df01d2d a nc:Habitat ;
+    np:hasCode "9.3."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Subtidal loose rock/pebble/gravel"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:N181192a4116c48b2b845f5567f4f41c8 a nc:Habitat ;
+    np:hasCode "9.8.5."^^xsd:string ;
+    np:hasLabel "Inter–reef soft substrate"^^xsd:string ;
+    ns1:broader nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e .
+
+nr:N18b6f611a2c54da192c7acda5d4610da a nc:Threat ;
+    np:hasCode "1.1."^^xsd:string ;
+    np:hasLabel "Housing & urban areas"^^xsd:string ;
+    ns1:broader nr:Nf422ad99d7434e6393e061ad51f03a5f .
+
+nr:N18c5ead8ca884885ad3c3a49178a0b2c a nc:Habitat ;
+    np:hasCode "3.5."^^xsd:string ;
+    np:hasLabel "Shrubland – Subtropical/tropical dry"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:N194070ab527e4df3923fa61a525bf5ef a nc:Habitat ;
+    np:hasCode "7.2."^^xsd:string ;
+    np:hasLabel "Caves and Subterranean Habitats (non–aquatic) – Other subterranean habitats"^^xsd:string ;
+    ns1:broader nr:N961a4ac4a5f1459a86a0e47065ece406 .
+
+nr:N19b1ed0243574dfb97693a31caeef12b a nc:Measure ;
+    np:hasCode "5.1.4."^^xsd:string ;
+    np:hasLabel "Scale unspecified"^^xsd:string ;
+    ns1:broader nr:Nb4d5bb66644449abbe722d702819cdc9 .
+
+nr:N1bc15b662bf34a058acb1732c66bc477 a nc:Habitat ;
+    np:hasCode "10.3."^^xsd:string ;
+    np:hasLabel "Bathypelagic (1,000–4,000 m)"^^xsd:string ;
+    ns1:broader nr:N4e8ce42c696542dea59b34f0afde1356 .
+
+nr:N1d34e2c41b914bef9e3ebd7978502b37 a nc:Threat ;
+    np:hasCode "7.1.1."^^xsd:string ;
+    np:hasLabel "Increase in fire frequency/intensity"^^xsd:string ;
+    ns1:broader nr:Nacf0481930d64cafa61c27314b503ab5 .
+
+nr:N1f5e49bd71834c038aac0a4a0c74e74c a nc:Habitat ;
+    np:hasCode "9.8.2."^^xsd:string ;
+    np:hasLabel "Back slope"^^xsd:string ;
+    ns1:broader nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e .
+
+nr:N21132aae1e7643199483f39f21879db5 a nc:Habitat ;
+    np:hasCode "15.7."^^xsd:string ;
+    np:hasLabel "Irrigated Land [includes irrigation channels]"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N218b5822f4834ce7b2b8cf626a2d0a3f a nc:Threat ;
+    np:hasCode "5.2.1."^^xsd:string ;
+    np:hasLabel "Intentional use (species being assessed is the target)"^^xsd:string ;
+    ns1:broader nr:N1ca9c20bbbf64da1ad249c4470108d59 .
+
+nr:N22e98e7b4cdd4e8dba2582979de4cc90 a nc:Habitat ;
+    np:hasCode "3.6."^^xsd:string ;
+    np:hasLabel "Shrubland – Subtropical/tropical moist"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:N243eec4f0b634f568c1d3e114d1dd44a a nc:Habitat ;
+    np:hasCode "11.5."^^xsd:string ;
+    np:hasLabel "Seamount"^^xsd:string ;
+    ns1:broader nr:N0aeb1e9e4b104745b66c04656a96d787 .
+
+nr:N25cc10b05eaf497f85a0303e1b9158f1 a nc:Habitat ;
+    np:hasCode "4.7."^^xsd:string ;
+    np:hasLabel "Grassland – Subtropical/tropical high altitude"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:N29003b9bd68a47cd8bdf0c72c7e5ece9 a nc:Threat ;
+    np:hasCode "4.1."^^xsd:string ;
+    np:hasLabel "Roads & railroads"^^xsd:string ;
+    ns1:broader nr:N95a3b9824cdc48b7bce8db8d7dedd707 .
+
+nr:N29f828fe477849a58d890291910ba591 a nc:Habitat ;
+    np:hasCode "5.3."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Shrub dominated wetlands"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N2a9ae7e066d34ab1a69fe4652ec635d0 a nc:Threat ;
+    np:hasCode "7.2.1."^^xsd:string ;
+    np:hasLabel "Abstraction of surface water (domestic use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:N2bee381426ae4bc0b989cae27992c69a a nc:Habitat ;
+    np:hasCode "5.6."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Seasonal/intermittent freshwater lakes (over 8 ha)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N2d7764c35d3542daa94a712c715511ac a nc:Habitat ;
+    np:hasCode "9.1."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Pelagic"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:N2e67848f460347ae94c330c1b28038fd a nc:Habitat ;
+    np:hasCode "5.14."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Permanent saline, brackish or alkaline lakes"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N2f54c6391c01433db6b038b8d8fbcc86 a nc:Habitat ;
+    np:hasCode "15.11."^^xsd:string ;
+    np:hasLabel "Marine Anthropogenic Structures"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N2fb8299f7ab14462b076209caa49f99a a nc:Measure ;
+    np:hasCode "5.4.1."^^xsd:string ;
+    np:hasLabel "International level"^^xsd:string ;
+    ns1:broader nr:N668e2a733fb04955b92dd96cda47d145 .
+
+nr:N304c4dd42bab42fa96d5ecbf5cbc54bb a nc:Habitat ;
+    np:hasCode "12.6."^^xsd:string ;
+    np:hasLabel "Tidepools"^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:N330a5fbc96fc4df79ba3a40925fd64fb a nc:Measure ;
+    np:hasCode "6.1."^^xsd:string ;
+    np:hasLabel "Linked enterprises & livelihood alternatives"^^xsd:string ;
+    ns1:broader nr:N0156ebccf6284bcd9de318c2a808e6ee .
+
+nr:N33259c70306144758c8f3d056bca7f86 a nc:Habitat ;
+    np:hasCode "13.4."^^xsd:string ;
+    np:hasLabel "Coastal Brackish/Saline Lagoons/Marine Lakes"^^xsd:string ;
+    ns1:broader nr:Ne2fddc8e52914a98b45140eef1f5d5f7 .
+
+nr:N342867acc1064cfab603fdd8ac00b72e a nc:Measure ;
+    np:hasCode "3.4.1."^^xsd:string ;
+    np:hasLabel "Captive breeding/artificial propagation"^^xsd:string ;
+    ns1:broader nr:N4f931f392b124627b3bda5eb2b0802f0 .
+
+nr:N35f1263ab4384a83b73cd8edf4a68453 a nc:Habitat ;
+    np:hasCode "12.5."^^xsd:string ;
+    np:hasLabel "Salt Marshes (Emergent Grasses)"^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:N398790a6a86441069ee2fede27b5ebdc a nc:Threat ;
+    np:hasCode "4.4."^^xsd:string ;
+    np:hasLabel "Flight paths"^^xsd:string ;
+    ns1:broader nr:N95a3b9824cdc48b7bce8db8d7dedd707 .
+
+nr:N3a41453cee9041e7a28b40e847902a45 a nc:Threat ;
+    np:hasCode "2.4.3."^^xsd:string ;
+    np:hasLabel "Scale Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:N44dce63ca52c414bb8a46c1e682f7f79 .
+
+nr:N3d1a945d72ab4dfeb58b8fafdc27166e a nc:Measure ;
+    np:hasCode "5.1.2."^^xsd:string ;
+    np:hasLabel "National level"^^xsd:string ;
+    ns1:broader nr:Nb4d5bb66644449abbe722d702819cdc9 .
+
+nr:N3e4c86b330f6421596e2d1f892ab988c a nc:Habitat ;
+    np:hasCode "15.4."^^xsd:string ;
+    np:hasLabel "Salt Exploitation Sites"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N3f2ca0a5a9274eb8a3085bcdd18f7f61 a nc:Habitat ;
+    np:hasCode "11.6."^^xsd:string ;
+    np:hasLabel "Deep Sea Vents (Rifts/Seeps)"^^xsd:string ;
+    ns1:broader nr:N0aeb1e9e4b104745b66c04656a96d787 .
+
+nr:N40484264ec9947d7b4f61d3f38ba966e a nc:Threat ;
+    np:hasCode "2.3.3."^^xsd:string ;
+    np:hasLabel "Agro-industry grazing, ranching or farming"^^xsd:string ;
+    ns1:broader nr:Nc53195b7e8734847b3fa920de0587de8 .
+
+nr:N412ce62f221141328466117c88a30f5d a nc:Threat ;
+    np:hasCode "11.2."^^xsd:string ;
+    np:hasLabel "Droughts"^^xsd:string ;
+    ns1:broader nr:N84b904bb3719409580d037a0e517bd83 .
+
+nr:N4378185468fe4af8b6d131635eba39ff a nc:Measure ;
+    np:hasCode "1.1."^^xsd:string ;
+    np:hasLabel "Site/area protection"^^xsd:string ;
+    ns1:broader nr:N7fbe1478dbb04389a85db9c047be77e5 .
+
+nr:N454c7df99c6b4a0daa70cba88425f0da a nc:Habitat ;
+    np:hasCode "5.7."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Permanent freshwater marshes/pools (under 8 ha)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N457c8e88108f467799e47fb68ac8c285 a nc:Threat ;
+    np:hasCode "6.2."^^xsd:string ;
+    np:hasLabel "War, civil unrest & military exercises"^^xsd:string ;
+    ns1:broader nr:Nfadb953380a54a4cbf5b1627df860b4d .
+
+nr:N463120ca30534c9c981a03c61ccb0a64 a nc:Threat ;
+    np:hasCode "11.3."^^xsd:string ;
+    np:hasLabel "Temperature extremes"^^xsd:string ;
+    ns1:broader nr:N84b904bb3719409580d037a0e517bd83 .
+
+nr:N47b1b63eb0ec4fb798e661a14af53b9b a nc:Threat ;
+    np:hasCode "7.2.8."^^xsd:string ;
+    np:hasLabel "Abstraction of ground water (unknown use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:N4903995c5c4942bab56d221d6a10c160 a nc:Threat ;
+    np:hasCode "2.2.1."^^xsd:string ;
+    np:hasLabel "Small-holder plantations"^^xsd:string ;
+    ns1:broader nr:Ncbefc2cd18b641fdbc0d76ba02d13759 .
+
+nr:N4b67f11cf7fd45658843c9db0aaa9f7b a nc:Threat ;
+    np:hasCode "2.2.2."^^xsd:string ;
+    np:hasLabel "Agro-industry plantations"^^xsd:string ;
+    ns1:broader nr:Ncbefc2cd18b641fdbc0d76ba02d13759 .
+
+nr:N4cc37d160bc740a0badd87ba4587b49b a nc:Threat ;
+    np:hasCode "5.1.1."^^xsd:string ;
+    np:hasLabel "Intentional use (species being assessed is the target)"^^xsd:string ;
+    ns1:broader nr:N6908e4c2a5784177b9c79b68fe73b2df .
+
+nr:N4f5e63c02f654f6e84fb3c481ceb27df a nc:Habitat ;
+    np:hasCode "14.3."^^xsd:string ;
+    np:hasLabel "Plantations"^^xsd:string ;
+    ns1:broader nr:N73267840854e4e3a8381f016b18987c2 .
+
+nr:N4ffb014bc00c48b0b5d6ab7d42d00a16 a nc:Threat ;
+    np:hasCode "5.1.3."^^xsd:string ;
+    np:hasLabel "Persecution/control"^^xsd:string ;
+    ns1:broader nr:N6908e4c2a5784177b9c79b68fe73b2df .
+
+nr:N50d7a4fa90544960a240fc80ac80befd a nc:Habitat ;
+    np:hasCode "15.3."^^xsd:string ;
+    np:hasLabel "Aquaculture Ponds"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N52dd3e774c014c568567250ca22a9560 a nc:Threat ;
+    np:hasCode "12."^^xsd:string ;
+    np:hasLabel "Other options"^^xsd:string ;
+    ns1:narrower nr:N78f3055185354cb196addffe6b87b4b1 .
+
+nr:N54180f2901c8464b9b468020cfdf0e96 a nc:Threat ;
+    np:hasCode "5.4.2."^^xsd:string ;
+    np:hasLabel "Intentional use: large scale (species being assessed is the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:N54dcc7ea33b54e1ea3042cc5b59717cc a nc:Habitat ;
+    np:hasCode "3.7."^^xsd:string ;
+    np:hasLabel "Shrubland – Subtropical/tropical high altitude"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:N5520d8f49e3b4087ad5fa23a782f63ab a nc:Habitat ;
+    np:hasCode "5.12."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Geothermal wetlands"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N5925f002d9ba4e21b6d62cee7972f91d a nc:Habitat ;
+    np:hasCode "9.10."^^xsd:string ;
+    np:hasLabel "Estuaries"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:N592ed097d3b7462cb5ba8661c5846396 a nc:Measure ;
+    np:hasCode "3.1.1."^^xsd:string ;
+    np:hasLabel "Harvest management"^^xsd:string ;
+    ns1:broader nr:N20e01b7f145e46a59aabc98670efa05d .
+
+nr:N5959592bb54442c9befbc9f0bfebb2c1 a nc:Threat ;
+    np:hasCode "3.2."^^xsd:string ;
+    np:hasLabel "Mining & quarrying"^^xsd:string ;
+    ns1:broader nr:N76285a768d324f21ae113159b31d9ac1 .
+
+nr:N5a138dfba4984a159c5e8c1e1ceeb331 a nc:Measure ;
+    np:hasCode "6.3."^^xsd:string ;
+    np:hasLabel "Market forces"^^xsd:string ;
+    ns1:broader nr:N0156ebccf6284bcd9de318c2a808e6ee .
+
+nr:N5a4046d992d34650a0a0dfc391f038f5 a nc:Habitat ;
+    np:hasCode "11.1.1."^^xsd:string ;
+    np:hasLabel "Hard Substrate"^^xsd:string ;
+    ns1:broader nr:Nb23fbab499644429b6df8095d4f9e425 .
+
+nr:N5a666dcd01d14e89a1a0a883006ad335 a nc:Threat ;
+    np:hasCode "10.3."^^xsd:string ;
+    np:hasLabel "Avalanches/landslides"^^xsd:string ;
+    ns1:broader nr:Nad25787821f246cba296cd608bafe931 .
+
+nr:N5bce24dc8aec45298a1427d45e1ea849 a nc:Threat ;
+    np:hasCode "1.2."^^xsd:string ;
+    np:hasLabel "Commercial & industrial areas"^^xsd:string ;
+    ns1:broader nr:Nf422ad99d7434e6393e061ad51f03a5f .
+
+nr:N5c6b96809a3a4fae8bb1b0b3346f4e9e a nc:Habitat ;
+    np:hasCode "5.2."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Seasonal/intermittent/irregular rivers/streams/creeks"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N5e548347483a4a2a9f3703ff4458bbe9 a nc:Habitat ;
+    np:hasCode "5.1."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Permanent rivers/streams/creeks (includes waterfalls)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N5e993183d88245ddbf1236f00c11a314 a nc:Measure ;
+    np:hasCode "5.2."^^xsd:string ;
+    np:hasLabel "Policies and regulations"^^xsd:string ;
+    ns1:broader nr:N73b612727e6942d29d20b99602e1d286 .
+
+nr:N5e9d952af7b04268ad09da2b82f245a3 a nc:Habitat ;
+    np:hasCode "9.8.6."^^xsd:string ;
+    np:hasLabel "Inter–reef rubble substrate"^^xsd:string ;
+    ns1:broader nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e .
+
+nr:N5efef1f41f0243d79fb8929284a9621d a nc:Habitat ;
+    np:hasCode "12.1."^^xsd:string ;
+    np:hasLabel "Rocky Shoreline"^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:N5f6a5d44d92b4ef88a125ee209dcbb45 a nc:Measure ;
+    np:hasCode "4.2."^^xsd:string ;
+    np:hasLabel "Training"^^xsd:string ;
+    ns1:broader nr:N6ded0d230fae4cfd9899d97bc9d54d92 .
+
+nr:N61a00b9a88564265aad70eb9280252c0 a nc:Threat ;
+    np:hasCode "6.1."^^xsd:string ;
+    np:hasLabel "Recreational activities"^^xsd:string ;
+    ns1:broader nr:Nfadb953380a54a4cbf5b1627df860b4d .
+
+nr:N6344aa07e35b4ad69805a1c774604930 a nc:Habitat ;
+    np:hasCode "14.1."^^xsd:string ;
+    np:hasLabel "Arable Land"^^xsd:string ;
+    ns1:broader nr:N73267840854e4e3a8381f016b18987c2 .
+
+nr:N654cadbff9a34bf58f7c0992cadab77c a nc:Measure ;
+    np:hasCode "4.1."^^xsd:string ;
+    np:hasLabel "Formal education"^^xsd:string ;
+    ns1:broader nr:N6ded0d230fae4cfd9899d97bc9d54d92 .
+
+nr:N65961a672ddb428993e7b24c6b93d6a5 a nc:Threat ;
+    np:hasCode "5.3.5."^^xsd:string ;
+    np:hasLabel "Motivation Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Na575cae135954266b571b1f80500728d .
+
+nr:N660991d0460c4d7482b74c793052fe8a a nc:Threat ;
+    np:hasCode "7.2.4."^^xsd:string ;
+    np:hasLabel "Abstraction of surface water (unknown use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:N67a67f735e774be080b86e6b57779139 a nc:Threat ;
+    np:hasCode "5.3.2."^^xsd:string ;
+    np:hasLabel "Intentional use: large scale (species being assessed is the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Na575cae135954266b571b1f80500728d .
+
+nr:N697e0c83881d49b78c028bfd54f5553d a nc:Threat ;
+    np:hasCode "2.1.3."^^xsd:string ;
+    np:hasLabel "Agro-industry farming"^^xsd:string ;
+    ns1:broader nr:Nbabc8216f579456b9d3d044680bbb15f .
+
+nr:N6c796684092243fbb5f4fc87ed373d0d a nc:Threat ;
+    np:hasCode "9.1.2."^^xsd:string ;
+    np:hasLabel "Run-off"^^xsd:string ;
+    ns1:broader nr:N7bbd766c51d243e7ba5ba8a53c1904ed .
+
+nr:N6e1179d94da048bd8e7bdf0674061dad a nc:Threat ;
+    np:hasCode "11.1."^^xsd:string ;
+    np:hasLabel "Habitat shifting & alteration"^^xsd:string ;
+    ns1:broader nr:N84b904bb3719409580d037a0e517bd83 .
+
+nr:N6ee92808ed074c83981c86ba6107a617 a nc:Threat ;
+    np:hasCode "5.4.6."^^xsd:string ;
+    np:hasLabel "Motivation Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:N6ff0e0c90e734f5f9922b6a703b896a1 a nc:Habitat ;
+    np:hasCode "10.2."^^xsd:string ;
+    np:hasLabel "Mesopelagic (200–1,000 m)"^^xsd:string ;
+    ns1:broader nr:N4e8ce42c696542dea59b34f0afde1356 .
+
+nr:N7006cdb5302246b49fc7603d7c663533 a nc:Habitat ;
+    np:hasCode "5.15."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Seasonal/intermittent saline, brackish or alkaline lakes and flats"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N71696c71e9104703a59f266c4480e2f0 a nc:Measure ;
+    np:hasCode "2.1."^^xsd:string ;
+    np:hasLabel "Site/area management"^^xsd:string ;
+    ns1:broader nr:N37240d5237914e8e986747e72eafd477 .
+
+nr:N726a42bcc29846f39da3fba0cc403600 a nc:Habitat ;
+    np:hasCode "1.1."^^xsd:string ;
+    np:hasLabel "Forest – Boreal"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:N74883df9eb924c81b5914fb451339fbf a nc:Threat ;
+    np:hasCode "2.4.2."^^xsd:string ;
+    np:hasLabel "Industrial aquaculture"^^xsd:string ;
+    ns1:broader nr:N44dce63ca52c414bb8a46c1e682f7f79 .
+
+nr:N759cdd9c036e401aab192aff6b0b144c a nc:Threat ;
+    np:hasCode "9.2.3."^^xsd:string ;
+    np:hasLabel "Type Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Nc975f22823b74b158b5673e06a90c0e5 .
+
+nr:N77164aad60844d70b1af282733153428 a nc:Threat ;
+    np:hasCode "2.1.2."^^xsd:string ;
+    np:hasLabel "Small-holder farming"^^xsd:string ;
+    ns1:broader nr:Nbabc8216f579456b9d3d044680bbb15f .
+
+nr:N78f3055185354cb196addffe6b87b4b1 a nc:Threat ;
+    np:hasCode "12.1."^^xsd:string ;
+    np:hasLabel "Other threat"^^xsd:string ;
+    ns1:broader nr:N52dd3e774c014c568567250ca22a9560 .
+
+nr:N797f7798687b4505a38b259f5850bd0f a nc:Threat ;
+    np:hasCode "5.2.4."^^xsd:string ;
+    np:hasLabel "Motivation Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:N1ca9c20bbbf64da1ad249c4470108d59 .
+
+nr:N79efe42124ca4ffca227afb8ce91876e a nc:Measure ;
+    np:hasCode "5.4.4."^^xsd:string ;
+    np:hasLabel "Scale unspecified"^^xsd:string ;
+    ns1:broader nr:N668e2a733fb04955b92dd96cda47d145 .
+
+nr:N7acbe7254cad409eb679aaefba46ce13 a nc:Habitat ;
+    np:hasCode "7.1."^^xsd:string ;
+    np:hasLabel "Caves and Subterranean Habitats (non–aquatic) – Caves"^^xsd:string ;
+    ns1:broader nr:N961a4ac4a5f1459a86a0e47065ece406 .
+
+nr:N7d5661bf83f34427bd57160ac77ce374 a nc:Threat ;
+    np:hasCode "5.4.3."^^xsd:string ;
+    np:hasLabel "Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:N7dbc322de58f4241908f6333fdf61fc4 a nc:Habitat ;
+    np:hasCode "9.8.1."^^xsd:string ;
+    np:hasLabel "Outer reef channel"^^xsd:string ;
+    ns1:broader nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e .
+
+nr:N7ddc55b48f0b483f98df351ae863b59a a nc:Habitat ;
+    np:hasCode "4.5."^^xsd:string ;
+    np:hasLabel "Grassland – Subtropical/tropical dry"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:N7deb0455ea094be09a9bbca0138d14d6 a nc:Habitat ;
+    np:hasCode "1.8."^^xsd:string ;
+    np:hasLabel "Forest – Subtropical/tropical swamp"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:N7e3e7b62cc5743d68e7f91e66dc16bc9 a nc:Habitat ;
+    np:hasCode "8.1."^^xsd:string ;
+    np:hasLabel "Desert – Hot"^^xsd:string ;
+    ns1:broader nr:N2023cd2d892949109a5830bda3183929 .
+
+nr:N7f188df1c458417d963bd1e75ea8fa39 a nc:Threat ;
+    np:hasCode "2.4.1."^^xsd:string ;
+    np:hasLabel "Subsistence/artisanal aquaculture"^^xsd:string ;
+    ns1:broader nr:N44dce63ca52c414bb8a46c1e682f7f79 .
+
+nr:N808659dd914d4195859aa229a13d177a a nc:Habitat ;
+    np:hasCode "13.2."^^xsd:string ;
+    np:hasLabel "Coastal Caves/Karst"^^xsd:string ;
+    ns1:broader nr:Ne2fddc8e52914a98b45140eef1f5d5f7 .
+
+nr:N80ddbeb9d3024ab3b4e9eb57712e959d a nc:Threat ;
+    np:hasCode "6.3."^^xsd:string ;
+    np:hasLabel "Work & other activities"^^xsd:string ;
+    ns1:broader nr:Nfadb953380a54a4cbf5b1627df860b4d .
+
+nr:N8223053b02ca4858807c5b19d00ffd32 a nc:Habitat ;
+    np:hasCode "11.4."^^xsd:string ;
+    np:hasLabel "Hadal/Deep Sea Trench (>6,000 m)"^^xsd:string ;
+    ns1:broader nr:N0aeb1e9e4b104745b66c04656a96d787 .
+
+nr:N834097a745c94ba9b099c1b1b4822628 a nc:Threat ;
+    np:hasCode "7.1.3."^^xsd:string ;
+    np:hasLabel "Trend Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Nacf0481930d64cafa61c27314b503ab5 .
+
+nr:N85374ef53ac945518e3abe2d4ff648b4 a nc:Habitat ;
+    np:hasCode "3.4."^^xsd:string ;
+    np:hasLabel "Shrubland – Temperate"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:N857d6063ef4740a5a7275117ccaf3552 a nc:Threat ;
+    np:hasCode "5.2.3."^^xsd:string ;
+    np:hasLabel "Persecution/control"^^xsd:string ;
+    ns1:broader nr:N1ca9c20bbbf64da1ad249c4470108d59 .
+
+nr:N85c26a91ec6a4630b3be865732d92c53 a nc:Habitat ;
+    np:hasCode "9.6."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Subtidal muddy"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:N87645c3281584f81ac34b5b3c295867d a nc:Habitat ;
+    np:hasCode "13.3."^^xsd:string ;
+    np:hasLabel "Coastal Sand Dunes"^^xsd:string ;
+    ns1:broader nr:Ne2fddc8e52914a98b45140eef1f5d5f7 .
+
+nr:N87969832178a4a66bb4c25b6013b4453 a nc:Threat ;
+    np:hasCode "8.3."^^xsd:string ;
+    np:hasLabel "Introduced genetic material"^^xsd:string ;
+    ns1:broader nr:Nec9782b460c74862887a8be6aa9ecca8 .
+
+nr:N8987acbcf14b40f29de3856f2bbd4b86 a nc:Habitat ;
+    np:hasCode "5.18."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Karst and other subterranean hydrological systems (inland)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N8ab045b78c6a4b379ca730126798b2ab a nc:Threat ;
+    np:hasCode "8.2.2."^^xsd:string ;
+    np:hasLabel "Named species"^^xsd:string ;
+    ns1:broader nr:N11054f3267764ccbabd33638a70c8b85 .
+
+nr:N8acb0271626f4a9f9a00854ba2bf2574 a nc:Habitat ;
+    np:hasCode "5.8."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Seasonal/intermittent freshwater marshes/pools (under 8 ha)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N8af9797cedf94b86bdf50441b3a04695 a nc:Habitat ;
+    np:hasCode "12.3."^^xsd:string ;
+    np:hasLabel "Shingle and/or Pebble Shoreline and/or Beaches"^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:N8c039f8f45934ad2814304d23e19159c a nc:Habitat ;
+    np:hasCode "8.3."^^xsd:string ;
+    np:hasLabel "Desert – Cold"^^xsd:string ;
+    ns1:broader nr:N2023cd2d892949109a5830bda3183929 .
+
+nr:N8c0c5fc7c42d4d28b17b18b7c8dd79f4 a nc:Threat ;
+    np:hasCode "9.1.3."^^xsd:string ;
+    np:hasLabel "Type Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:N7bbd766c51d243e7ba5ba8a53c1904ed .
+
+nr:N8ecc6bb275b844199a2f19c43f1190b4 a nc:Habitat ;
+    np:hasCode "5.4."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Bogs, marshes, swamps, fens, peatlands"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N8f013911092340dda6371593dee61ac5 a nc:Threat ;
+    np:hasCode "10.1."^^xsd:string ;
+    np:hasLabel "Volcanoes"^^xsd:string ;
+    ns1:broader nr:Nad25787821f246cba296cd608bafe931 .
+
+nr:N8fa44a946eed4177a0d9b5e4b6d5fd6b a nc:Threat ;
+    np:hasCode "2.3.4."^^xsd:string ;
+    np:hasLabel "Scale Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Nc53195b7e8734847b3fa920de0587de8 .
+
+nr:N8fb73b2009764208ac67f794de3a78af a nc:Threat ;
+    np:hasCode "11.5."^^xsd:string ;
+    np:hasLabel "Other impacts"^^xsd:string ;
+    ns1:broader nr:N84b904bb3719409580d037a0e517bd83 .
+
+nr:N905001dbb7464ff6afcbf9a844588a13 a nc:Habitat ;
+    np:hasCode "15.6."^^xsd:string ;
+    np:hasLabel "Wastewater Treatment Areas"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:N916635767beb4af7bf13566019bbc40b a nc:Measure ;
+    np:hasCode "2.2."^^xsd:string ;
+    np:hasLabel "Invasive/problematic species control"^^xsd:string ;
+    ns1:broader nr:N37240d5237914e8e986747e72eafd477 .
+
+nr:N93f2f54363394e2fb9c84cb504f99d27 a nc:Habitat ;
+    np:hasCode "5.10."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Tundra wetlands (inc. pools and temporary waters from snowmelt)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N956930a45a1848baa5286eade000600a a nc:Habitat ;
+    np:hasCode "9.7."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Macroalgal/kelp"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:N9596e8eb97964846baa792d1d9ba777c a nc:Threat ;
+    np:hasCode "2.2.3."^^xsd:string ;
+    np:hasLabel "Scale Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Ncbefc2cd18b641fdbc0d76ba02d13759 .
+
+nr:N95e26a66026d465c9cb57147f654a9ce a nc:Habitat ;
+    np:hasCode "9.8.4."^^xsd:string ;
+    np:hasLabel "Lagoon"^^xsd:string ;
+    ns1:broader nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e .
+
+nr:N9891026b71ec490791f40c4eb0a8ae87 a nc:Measure ;
+    np:hasCode "3.3.1."^^xsd:string ;
+    np:hasLabel "Reintroduction"^^xsd:string ;
+    ns1:broader nr:N643ea17fa7484bcba2c920ae9271ab2a .
+
+nr:N99c0f21c79264bea8440a8f2310a784e a nc:Measure ;
+    np:hasCode "1.2."^^xsd:string ;
+    np:hasLabel "Resource & habitat protection"^^xsd:string ;
+    ns1:broader nr:N7fbe1478dbb04389a85db9c047be77e5 .
+
+nr:N9b091d8ddea945c5bb8be0152e8a54fa a nc:Threat ;
+    np:hasCode "4.3."^^xsd:string ;
+    np:hasLabel "Shipping lanes"^^xsd:string ;
+    ns1:broader nr:N95a3b9824cdc48b7bce8db8d7dedd707 .
+
+nr:N9b9b43bce530452ca2414cf1901ba110 a nc:Habitat ;
+    np:hasCode "4.3."^^xsd:string ;
+    np:hasLabel "Grassland – Subantarctic"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:N9df4b34656ce4e459fa2f99c83d5897a a nc:Habitat ;
+    np:hasCode "13.1."^^xsd:string ;
+    np:hasLabel "Sea Cliffs and Rocky Offshore Islands"^^xsd:string ;
+    ns1:broader nr:Ne2fddc8e52914a98b45140eef1f5d5f7 .
+
+nr:N9fbcfb037a0a4bb6ae8fec48c5397b11 a nc:Threat ;
+    np:hasCode "1.3."^^xsd:string ;
+    np:hasLabel "Tourism & recreation areas"^^xsd:string ;
+    ns1:broader nr:Nf422ad99d7434e6393e061ad51f03a5f .
+
+nr:N9ff74a2f22e74ea8a90bc4d7327125c0 a nc:Measure ;
+    np:hasCode "6.4."^^xsd:string ;
+    np:hasLabel "Conservation payments"^^xsd:string ;
+    ns1:broader nr:N0156ebccf6284bcd9de318c2a808e6ee .
+
+nr:Na064a5e72b6e4d7c912186c6fe2db50a a nc:Measure ;
+    np:hasCode "3.1.3."^^xsd:string ;
+    np:hasLabel "Limiting population growth"^^xsd:string ;
+    ns1:broader nr:N20e01b7f145e46a59aabc98670efa05d .
+
+nr:Na25c8a5eb0bd434a88e1c4193792dc87 a nc:Threat ;
+    np:hasCode "2.3.2."^^xsd:string ;
+    np:hasLabel "Small-holder grazing, ranching or farming"^^xsd:string ;
+    ns1:broader nr:Nc53195b7e8734847b3fa920de0587de8 .
+
+nr:Na2733454bc0e4cb78b8c7083d1c2d2bb a nc:Threat ;
+    np:hasCode "2.3.1."^^xsd:string ;
+    np:hasLabel "Nomadic grazing"^^xsd:string ;
+    ns1:broader nr:Nc53195b7e8734847b3fa920de0587de8 .
+
+nr:Na3cc7d90b02e4328a3907b60b401eef6 a nc:Habitat ;
+    np:hasCode "9.4."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Subtidal sandy"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:Na5a20a7c3bd04b089b6601552383d319 a nc:Habitat ;
+    np:hasCode "12.4."^^xsd:string ;
+    np:hasLabel "Mud Shoreline and Intertidal Mud Flats"^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:Na7ce1d32751949bfa2656f9d18be37e0 a nc:Measure ;
+    np:hasCode "3.2."^^xsd:string ;
+    np:hasLabel "Species recovery"^^xsd:string ;
+    ns1:broader nr:Naec2c3b10fd04eb7b7dd98ac730c5d36 .
+
+nr:Naa892b9c555a4f358938e4a35d08ce4e a nc:Habitat ;
+    np:hasCode "1.4."^^xsd:string ;
+    np:hasLabel "Forest – Temperate"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:Naaa9dddd5190490795dda3b112a8e28e a nc:Habitat ;
+    np:hasCode "3.1."^^xsd:string ;
+    np:hasLabel "Shrubland – Subarctic"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:Naccf0208a60442e6b9d799b797810057 a nc:Habitat ;
+    np:hasCode "15.8."^^xsd:string ;
+    np:hasLabel "Seasonally Flooded Agricultural Land"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:Nad3037a9a61849609fb461e9f6407b64 a nc:Habitat ;
+    np:hasCode "1.3."^^xsd:string ;
+    np:hasLabel "Forest – Subantarctic"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:Nae2f1e159aaa430cb674ae1c21a22c1d a nc:Threat ;
+    np:hasCode "7.2.9."^^xsd:string ;
+    np:hasLabel "Small dams"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:Naefce0c0ba974d8c8bce49f094ad09b1 a nc:Threat ;
+    np:hasCode "9.1.1."^^xsd:string ;
+    np:hasLabel "Sewage"^^xsd:string ;
+    ns1:broader nr:N7bbd766c51d243e7ba5ba8a53c1904ed .
+
+nr:Nafe1e5d0c59d455493cc372dc06ff6f4 a nc:Habitat ;
+    np:hasCode "5.5."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Permanent freshwater lakes (over 8 ha)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:Nb0f578ae6a734df68737004ca16b3213 a nc:Measure ;
+    np:hasCode "4.3."^^xsd:string ;
+    np:hasLabel "Awareness & communications"^^xsd:string ;
+    ns1:broader nr:N6ded0d230fae4cfd9899d97bc9d54d92 .
+
+nr:Nb1610609a5c94ccbb4542ff8bb86a373 a nc:Habitat ;
+    np:hasCode "14.4."^^xsd:string ;
+    np:hasLabel "Rural Gardens"^^xsd:string ;
+    ns1:broader nr:N73267840854e4e3a8381f016b18987c2 .
+
+nr:Nb1f3aef31e694924a61a367ffd4e6e3d a nc:Threat ;
+    np:hasCode "7.2.6."^^xsd:string ;
+    np:hasLabel "Abstraction of ground water (commercial use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:Nb433874546c84aff82540d4e15484fb1 a nc:Habitat ;
+    np:hasCode "10.4."^^xsd:string ;
+    np:hasLabel "Abyssopelagic (4,000–6,000 m)"^^xsd:string ;
+    ns1:broader nr:N4e8ce42c696542dea59b34f0afde1356 .
+
+nr:Nb470bacb18394858bd0e2aabcbafba7e a nc:Habitat ;
+    np:hasCode "9.8.3."^^xsd:string ;
+    np:hasLabel "Foreslope (outer reef slope)"^^xsd:string ;
+    ns1:broader nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e .
+
+nr:Nb4a6542759b1490cabb08d934cdc2fbf a nc:Measure ;
+    np:hasCode "3.3.2."^^xsd:string ;
+    np:hasLabel "Benign introduction"^^xsd:string ;
+    ns1:broader nr:N643ea17fa7484bcba2c920ae9271ab2a .
+
+nr:Nb5438f4fbaa44b62be13fe139b2b849e a nc:Habitat ;
+    np:hasCode "8.2."^^xsd:string ;
+    np:hasLabel "Desert – Temperate"^^xsd:string ;
+    ns1:broader nr:N2023cd2d892949109a5830bda3183929 .
+
+nr:Nb5aea28942b5475bb9679da6756b92e7 a nc:Habitat ;
+    np:hasCode "5.16."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Permanent saline, brackish or alkaline marshes/pools"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:Nb61111e57ebd4208a1cd46008aab5044 a nc:Habitat ;
+    np:hasCode "14.5."^^xsd:string ;
+    np:hasLabel "Urban Areas"^^xsd:string ;
+    ns1:broader nr:N73267840854e4e3a8381f016b18987c2 .
+
+nr:Nb6205575d9f14dd5ac31816cbabe0afa a nc:Threat ;
+    np:hasCode "7.2.10."^^xsd:string ;
+    np:hasLabel "Large dams"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:Nb6eb289221a94768b16a6a9687cdb9ff a nc:Measure ;
+    np:hasCode "5.1.1."^^xsd:string ;
+    np:hasLabel "International level"^^xsd:string ;
+    ns1:broader nr:Nb4d5bb66644449abbe722d702819cdc9 .
+
+nr:Nb741a7f1ee904036a0a3abbc821b2b90 a nc:Habitat ;
+    np:hasCode "15.2."^^xsd:string ;
+    np:hasLabel "Ponds [below 8 ha]"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:Nb86ca6653a19460ab5a30167a7f4afe5 a nc:Habitat ;
+    np:hasCode "1.5."^^xsd:string ;
+    np:hasLabel "Forest – Subtropical/tropical dry"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:Nb9275bb26b0d45799b3243c3db99bec7 a nc:Habitat ;
+    np:hasCode "3.3."^^xsd:string ;
+    np:hasLabel "Shrubland – Boreal"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:Nb96441ab46e249c0860a294fcbfb02ab a nc:Habitat ;
+    np:hasCode "1.6."^^xsd:string ;
+    np:hasLabel "Forest – Subtropical/tropical moist lowland"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:Nbd96ed4a0e9d42248571131c57a8c3a0 a nc:Habitat ;
+    np:hasCode "13.5."^^xsd:string ;
+    np:hasLabel "Coastal Freshwater Lakes"^^xsd:string ;
+    ns1:broader nr:Ne2fddc8e52914a98b45140eef1f5d5f7 .
+
+nr:Nbec38686670e43869912c0c477950b85 a nc:Threat ;
+    np:hasCode "7.2.2."^^xsd:string ;
+    np:hasLabel "Abstraction of surface water (commercial use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:Nc00c2a0511044acb859e6a82dbb3030d a nc:Measure ;
+    np:hasCode "5.4.3."^^xsd:string ;
+    np:hasLabel "Sub-national level"^^xsd:string ;
+    ns1:broader nr:N668e2a733fb04955b92dd96cda47d145 .
+
+nr:Nc1bc1c8bef15408ea956537206b2d947 a nc:Threat ;
+    np:hasCode "2.1.4."^^xsd:string ;
+    np:hasLabel "Scale Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:Nbabc8216f579456b9d3d044680bbb15f .
+
+nr:Nc57f341877fb4240a8cb65eb65954330 a nc:Measure ;
+    np:hasCode "5.3."^^xsd:string ;
+    np:hasLabel "Private sector standards & codes"^^xsd:string ;
+    ns1:broader nr:N73b612727e6942d29d20b99602e1d286 .
+
+nr:Nc7ad4b9d36284bd18db3b2da309d3f63 a nc:Habitat ;
+    np:hasCode "15.10."^^xsd:string ;
+    np:hasLabel "Karst and Other Subterranean Hydrological Systems [human–made]"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:Nc97d56cd72a0432982a7644f5136fc5c a nc:Threat ;
+    np:hasCode "10.2."^^xsd:string ;
+    np:hasLabel "Earthquakes/tsunamis"^^xsd:string ;
+    ns1:broader nr:Nad25787821f246cba296cd608bafe931 .
+
+nr:Nc99a9a2cd3a2471fbf764065cb839127 a nc:Threat ;
+    np:hasCode "5.3.3."^^xsd:string ;
+    np:hasLabel "Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Na575cae135954266b571b1f80500728d .
+
+nr:Nca4431a7257143dcbad5c3eddc2bc40e a nc:Threat ;
+    np:hasCode "8.4.1."^^xsd:string ;
+    np:hasLabel "Unspecified species"^^xsd:string ;
+    ns1:broader nr:N97189cc29997413a82f007d6fac0770a .
+
+nr:Ncdaaf254b8894922a86f332fe1c684d9 a nc:Threat ;
+    np:hasCode "7.2.3."^^xsd:string ;
+    np:hasLabel "Abstraction of surface water (agricultural use)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:Ncdd0daadfc624fac807df14b8996fa70 a nc:Measure ;
+    np:hasCode "3.4.2."^^xsd:string ;
+    np:hasLabel "Genome resource bank"^^xsd:string ;
+    ns1:broader nr:N4f931f392b124627b3bda5eb2b0802f0 .
+
+nr:Ncde409250ff5421dab5de18cad78b455 a nc:Threat ;
+    np:hasCode "5.1.4."^^xsd:string ;
+    np:hasLabel "Motivation Unknown/Unrecorded"^^xsd:string ;
+    ns1:broader nr:N6908e4c2a5784177b9c79b68fe73b2df .
+
+nr:Ncded092df8c045d593dc24e7983f4d88 a nc:Threat ;
+    np:hasCode "4.2."^^xsd:string ;
+    np:hasLabel "Utility & service lines"^^xsd:string ;
+    ns1:broader nr:N95a3b9824cdc48b7bce8db8d7dedd707 .
+
+nr:Ncf576bfdf6d04013a3385ea03c1f96fc a nc:Threat ;
+    np:hasCode "7.2.11."^^xsd:string ;
+    np:hasLabel "Dams (size unknown)"^^xsd:string ;
+    ns1:broader nr:N3282c3bd390e49d391c60877aedded9f .
+
+nr:Nd2d67708080942ed9fb98175f73ea713 a nc:Threat ;
+    np:hasCode "2.1.1."^^xsd:string ;
+    np:hasLabel "Shifting agriculture"^^xsd:string ;
+    ns1:broader nr:Nbabc8216f579456b9d3d044680bbb15f .
+
+nr:Nd448442a30654c2aaf76a8f033c783db a nc:Habitat ;
+    np:hasCode "11.2."^^xsd:string ;
+    np:hasLabel "Abyssal Plain (4,000–6,000 m)"^^xsd:string ;
+    ns1:broader nr:N0aeb1e9e4b104745b66c04656a96d787 .
+
+nr:Nd514b0fe309a4f04b3985b14452346b3 a nc:Measure ;
+    np:hasCode "2.3."^^xsd:string ;
+    np:hasLabel "Habitat & natural process restoration"^^xsd:string ;
+    ns1:broader nr:N37240d5237914e8e986747e72eafd477 .
+
+nr:Nd824cbe45ff24f1db369cdf251a85965 a nc:Habitat ;
+    np:hasCode "15.9."^^xsd:string ;
+    np:hasLabel "Canals and Drainage Channels, Ditches"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:Nd8b2b9fc4cc843fa9eacc2795aaf0526 a nc:Habitat ;
+    np:hasCode "9.2."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Subtidal rock and rocky reefs"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:Nd8bdb907329d4f08bb4d3110079bfef6 a nc:Habitat ;
+    np:hasCode "14.2."^^xsd:string ;
+    np:hasLabel "Pastureland"^^xsd:string ;
+    ns1:broader nr:N73267840854e4e3a8381f016b18987c2 .
+
+nr:Nd993a774a01d4f36870e3d0ca73fbc6b a nc:Threat ;
+    np:hasCode "8.5.1."^^xsd:string ;
+    np:hasLabel "Unspecified \"species\" (disease)"^^xsd:string ;
+    ns1:broader nr:Nc8615d7b544d4444a57ffe5b88ed2d07 .
+
+nr:Nda4f3fb4336e4f9dac9c5f57e531860f a nc:Threat ;
+    np:hasCode "5.4.4."^^xsd:string ;
+    np:hasLabel "Unintentional effects: large scale (species being assessed is not the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:Ndaa9f7fdef9a44b882cf265e134ad698 a nc:Threat ;
+    np:hasCode "7.1.2."^^xsd:string ;
+    np:hasLabel "Suppression in fire frequency/intensity"^^xsd:string ;
+    ns1:broader nr:Nacf0481930d64cafa61c27314b503ab5 .
+
+nr:Ndadd4df149fa49c5b08aa9bd4dd299b8 a nc:Threat ;
+    np:hasCode "5.3.4."^^xsd:string ;
+    np:hasLabel "Unintentional effects: large scale (species being assessed is not the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Na575cae135954266b571b1f80500728d .
+
+nr:Ndb701baff79a44a7bd8088ea0d078aff a nc:Measure ;
+    np:hasCode "6.2."^^xsd:string ;
+    np:hasLabel "Substitution"^^xsd:string ;
+    ns1:broader nr:N0156ebccf6284bcd9de318c2a808e6ee .
+
+nr:Ndc73939556ac431880565801a44b7327 a nc:Habitat ;
+    np:hasCode "5.13."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Permanent inland deltas"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:Ne210dc25af8e4e6db8ac28f791581309 a nc:Threat ;
+    np:hasCode "8.2.1."^^xsd:string ;
+    np:hasLabel "Unspecified species"^^xsd:string ;
+    ns1:broader nr:N11054f3267764ccbabd33638a70c8b85 .
+
+nr:Ne3aec127664846d5b5299bcdbf2028ea a nc:Habitat ;
+    np:hasCode "3.2."^^xsd:string ;
+    np:hasLabel "Shrubland – Subantarctic"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:Ne4ce019972d1449f9488d5052bcb64df a nc:Habitat ;
+    np:hasCode "11.3."^^xsd:string ;
+    np:hasLabel "Abyssal Mountain/Hills (4,000–6,000 m)"^^xsd:string ;
+    ns1:broader nr:N0aeb1e9e4b104745b66c04656a96d787 .
+
+nr:Ne5dc512e47db44eeb5a45ed86d061ca7 a nc:Habitat ;
+    np:hasCode "1.7."^^xsd:string ;
+    np:hasLabel "Forest – Subtropical/tropical mangrove vegetation above high tide level"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:Ne6d1af3538364686a698053656f77d86 a nc:Habitat ;
+    np:hasCode "4.6."^^xsd:string ;
+    np:hasLabel "Grassland – Subtropical/tropical seasonally wet/flooded"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:Ne75af1fc680e4b0aa9cd58b0238409e0 a nc:Threat ;
+    np:hasCode "9.2.2."^^xsd:string ;
+    np:hasLabel "Seepage from mining"^^xsd:string ;
+    ns1:broader nr:Nc975f22823b74b158b5673e06a90c0e5 .
+
+nr:Ne8537c59b5a04f3eb52284f4a32d1589 a nc:Habitat ;
+    np:hasCode "15.13."^^xsd:string ;
+    np:hasLabel "Mari/Brackish–culture Ponds"^^xsd:string ;
+    ns1:broader nr:N4d1e99bc3a38468980a876ed79a7f318 .
+
+nr:Ne883eb574cde4e3a92c74069ed26346d a nc:Threat ;
+    np:hasCode "5.2.2."^^xsd:string ;
+    np:hasLabel "Unintentional effects (species being assessed is not the target)"^^xsd:string ;
+    ns1:broader nr:N1ca9c20bbbf64da1ad249c4470108d59 .
+
+nr:Ne89176bcecfb43369ff7a424047484ff a nc:Threat ;
+    np:hasCode "5.3.1."^^xsd:string ;
+    np:hasLabel "Intentional use: subsistence/small scale (species being assessed is the target [harvest]"^^xsd:string ;
+    ns1:broader nr:Na575cae135954266b571b1f80500728d .
+
+nr:Nea340260e435452689a947ba64f4bbd1 a nc:Habitat ;
+    np:hasCode "3.8."^^xsd:string ;
+    np:hasLabel "Shrubland – Mediterranean–type shrubby vegetation"^^xsd:string ;
+    ns1:broader nr:N8b19bfc04f484d498c4609ee37840ac2 .
+
+nr:Nebb702d22ef44ef399d9f95752fc6d85 a nc:Habitat ;
+    np:hasCode "12.7."^^xsd:string ;
+    np:hasLabel "Mangrove Submerged Roots"^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:Ned5892ce5dcd444ba1562fe349e4e111 a nc:Threat ;
+    np:hasCode "8.6."^^xsd:string ;
+    np:hasLabel "Diseases of unknown cause"^^xsd:string ;
+    ns1:broader nr:Nec9782b460c74862887a8be6aa9ecca8 .
+
+nr:Ned614ac7c3404fa2a39a831a40ffca32 a nc:Measure ;
+    np:hasCode "5.1.3."^^xsd:string ;
+    np:hasLabel "Sub-national level"^^xsd:string ;
+    ns1:broader nr:Nb4d5bb66644449abbe722d702819cdc9 .
+
+nr:Nf0215beb7f474088aa4604b4a3696545 a nc:Habitat ;
+    np:hasCode "1.9."^^xsd:string ;
+    np:hasLabel "Forest – Subtropical/tropical moist montane"^^xsd:string ;
+    ns1:broader nr:N218f89d83db14b049136b740b4b3ecbf .
+
+nr:Nf1094e21285344e8ac4f24e3d2a8f234 a nc:Habitat ;
+    np:hasCode "5.9."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Freshwater springs and oases"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:Nf122dee43fb34512a39fc87380b9c7e5 a nc:Habitat ;
+    np:hasCode "14.6."^^xsd:string ;
+    np:hasLabel "Subtropical/Tropical Heavily Degraded Former Forest"^^xsd:string ;
+    ns1:broader nr:N73267840854e4e3a8381f016b18987c2 .
+
+nr:Nf1e586effbbb4abfa685f86e2aa70010 a nc:Threat ;
+    np:hasCode "3.1."^^xsd:string ;
+    np:hasLabel "Oil & gas drilling"^^xsd:string ;
+    ns1:broader nr:N76285a768d324f21ae113159b31d9ac1 .
+
+nr:Nf26cd136472049a198e81db7615549d7 a nc:Threat ;
+    np:hasCode "7.3."^^xsd:string ;
+    np:hasLabel "Other ecosystem modifications"^^xsd:string ;
+    ns1:broader nr:N571f615c567840098fabc0a7844ccaf7 .
+
+nr:Nf3ca83f119114ddc883d6c86f9129da1 a nc:Threat ;
+    np:hasCode "8.5.2."^^xsd:string ;
+    np:hasLabel "Named \"species\" (disease)"^^xsd:string ;
+    ns1:broader nr:Nc8615d7b544d4444a57ffe5b88ed2d07 .
+
+nr:Nf43a80a41a3543f798e53346e739e079 a nc:Habitat ;
+    np:hasCode "2.2."^^xsd:string ;
+    np:hasLabel "Savanna – Moist"^^xsd:string ;
+    ns1:broader nr:N719e3578db284ba28589b9d169e34f8a .
+
+nr:Nf6de87edf65b41f298f5b084396e5462 a nc:Habitat ;
+    np:hasCode "11.1.2."^^xsd:string ;
+    np:hasLabel "Soft Substrate"^^xsd:string ;
+    ns1:broader nr:Nb23fbab499644429b6df8095d4f9e425 .
+
+nr:Nf81b90c8a2754e7693a5a49a2b3513c3 a nc:Habitat ;
+    np:hasCode "9.5."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Subtidal sandy–mud"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:Nf9dc340caef24dceaf6c97cb14352dd1 a nc:Threat ;
+    np:hasCode "5.4.1."^^xsd:string ;
+    np:hasLabel "Intentional use: subsistence/small scale (species being assessed is the target)[harvest]"^^xsd:string ;
+    ns1:broader nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:Nfa275628731549da970f6ee85298e9e7 a nc:Threat ;
+    np:hasCode "8.1.2."^^xsd:string ;
+    np:hasLabel "Named species"^^xsd:string ;
+    ns1:broader nr:N587254e86cec478cb2f865655e8fc470 .
+
+nr:Nfb0f23174ff24ceb8c95812b6c73baf0 a nc:Habitat ;
+    np:hasCode "9.9."^^xsd:string ;
+    np:hasLabel "Seagrass (Submerged)"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 .
+
+nr:Nfc6616a667f445b8916061f71adc9003 a nc:Habitat ;
+    np:hasCode "12.2."^^xsd:string ;
+    np:hasLabel "Sandy Shoreline and/or Beaches, Sand Bars, Spits, etc."^^xsd:string ;
+    ns1:broader nr:N54f55f57e96143deb85d1e93a09af1bf .
+
+nr:Nfdbfbfcdb70b45fb87e54f9775d53ef7 a nc:Measure ;
+    np:hasCode "5.4.2."^^xsd:string ;
+    np:hasLabel "National level"^^xsd:string ;
+    ns1:broader nr:N668e2a733fb04955b92dd96cda47d145 .
+
+nr:Nfe0504b41259496aa183d241355c0e53 a nc:Habitat ;
+    np:hasCode "4.4."^^xsd:string ;
+    np:hasLabel "Grassland – Temperate"^^xsd:string ;
+    ns1:broader nr:N2b52480461d9492fbaa883791930b7d9 .
+
+nr:Nfe27578da5de464098466bcad781524f a nc:Habitat ;
+    np:hasCode "5.11."^^xsd:string ;
+    np:hasLabel "Wetlands (inland) – Alpine wetlands (inc. temporary waters from snowmelt)"^^xsd:string ;
+    ns1:broader nr:N96b5474ed97c40ddaf27fad24cc4e02c .
+
+nr:N719e3578db284ba28589b9d169e34f8a a nc:Habitat ;
+    np:hasCode "2."^^xsd:string ;
+    np:hasLabel "Savanna"^^xsd:string ;
+    ns1:narrower nr:N007e10c5d50243868cb445d15bbce6e9,
+        nr:Nf43a80a41a3543f798e53346e739e079 .
+
+nr:N7fbe1478dbb04389a85db9c047be77e5 a nc:Measure ;
+    np:hasCode "1."^^xsd:string ;
+    np:hasLabel "Land/water protection"^^xsd:string ;
+    ns1:narrower nr:N4378185468fe4af8b6d131635eba39ff,
+        nr:N99c0f21c79264bea8440a8f2310a784e .
+
+nr:N961a4ac4a5f1459a86a0e47065ece406 a nc:Habitat ;
+    np:hasCode "7."^^xsd:string ;
+    np:hasLabel "Caves & Subterranean Habitats (non–aquatic)"^^xsd:string ;
+    ns1:narrower nr:N194070ab527e4df3923fa61a525bf5ef,
+        nr:N7acbe7254cad409eb679aaefba46ce13 .
+
+nr:Nf9bd9164191342f3bf8297426d6f3d95 a nc:Threat ;
+    np:hasCode "9."^^xsd:string ;
+    np:hasLabel "Pollution"^^xsd:string ;
+    ns1:narrower nr:N7bbd766c51d243e7ba5ba8a53c1904ed,
+        nr:Nc975f22823b74b158b5673e06a90c0e5 .
+
+nr:N11054f3267764ccbabd33638a70c8b85 a nc:Threat ;
+    np:hasCode "8.2."^^xsd:string ;
+    np:hasLabel "Problematic native species/diseases"^^xsd:string ;
+    ns1:broader nr:Nec9782b460c74862887a8be6aa9ecca8 ;
+    ns1:narrower nr:N8ab045b78c6a4b379ca730126798b2ab,
+        nr:Ne210dc25af8e4e6db8ac28f791581309 .
+
+nr:N2023cd2d892949109a5830bda3183929 a nc:Habitat ;
+    np:hasCode "8."^^xsd:string ;
+    np:hasLabel "Desert"^^xsd:string ;
+    ns1:narrower nr:N7e3e7b62cc5743d68e7f91e66dc16bc9,
+        nr:N8c039f8f45934ad2814304d23e19159c,
+        nr:Nb5438f4fbaa44b62be13fe139b2b849e .
+
+nr:N37240d5237914e8e986747e72eafd477 a nc:Measure ;
+    np:hasCode "2."^^xsd:string ;
+    np:hasLabel "Land/water management"^^xsd:string ;
+    ns1:narrower nr:N71696c71e9104703a59f266c4480e2f0,
+        nr:N916635767beb4af7bf13566019bbc40b,
+        nr:Nd514b0fe309a4f04b3985b14452346b3 .
+
+nr:N4f931f392b124627b3bda5eb2b0802f0 a nc:Measure ;
+    np:hasCode "3.4."^^xsd:string ;
+    np:hasLabel "Ex-situ conservation"^^xsd:string ;
+    ns1:broader nr:Naec2c3b10fd04eb7b7dd98ac730c5d36 ;
+    ns1:narrower nr:N342867acc1064cfab603fdd8ac00b72e,
+        nr:Ncdd0daadfc624fac807df14b8996fa70 .
+
+nr:N571f615c567840098fabc0a7844ccaf7 a nc:Threat ;
+    np:hasCode "7."^^xsd:string ;
+    np:hasLabel "Natural system modifications"^^xsd:string ;
+    ns1:narrower nr:N3282c3bd390e49d391c60877aedded9f,
+        nr:Nacf0481930d64cafa61c27314b503ab5,
+        nr:Nf26cd136472049a198e81db7615549d7 .
+
+nr:N587254e86cec478cb2f865655e8fc470 a nc:Threat ;
+    np:hasCode "8.1."^^xsd:string ;
+    np:hasLabel "Invasive non-native/alien species/diseases"^^xsd:string ;
+    ns1:broader nr:Nec9782b460c74862887a8be6aa9ecca8 ;
+    ns1:narrower nr:N07cab4917ff14420a99f4a50b52410be,
+        nr:Nfa275628731549da970f6ee85298e9e7 .
+
+nr:N643ea17fa7484bcba2c920ae9271ab2a a nc:Measure ;
+    np:hasCode "3.3."^^xsd:string ;
+    np:hasLabel "Species re-introduction"^^xsd:string ;
+    ns1:broader nr:Naec2c3b10fd04eb7b7dd98ac730c5d36 ;
+    ns1:narrower nr:N9891026b71ec490791f40c4eb0a8ae87,
+        nr:Nb4a6542759b1490cabb08d934cdc2fbf .
+
+nr:N6ded0d230fae4cfd9899d97bc9d54d92 a nc:Measure ;
+    np:hasCode "4."^^xsd:string ;
+    np:hasLabel "Education & awareness"^^xsd:string ;
+    ns1:narrower nr:N5f6a5d44d92b4ef88a125ee209dcbb45,
+        nr:N654cadbff9a34bf58f7c0992cadab77c,
+        nr:Nb0f578ae6a734df68737004ca16b3213 .
+
+nr:N76285a768d324f21ae113159b31d9ac1 a nc:Threat ;
+    np:hasCode "3."^^xsd:string ;
+    np:hasLabel "Energy production & mining"^^xsd:string ;
+    ns1:narrower nr:N12267d2d28f1416998b53941859cd525,
+        nr:N5959592bb54442c9befbc9f0bfebb2c1,
+        nr:Nf1e586effbbb4abfa685f86e2aa70010 .
+
+nr:N97189cc29997413a82f007d6fac0770a a nc:Threat ;
+    np:hasCode "8.4."^^xsd:string ;
+    np:hasLabel "Problematic species/diseases of unknown origin"^^xsd:string ;
+    ns1:broader nr:Nec9782b460c74862887a8be6aa9ecca8 ;
+    ns1:narrower nr:N03eb46d62712486a94b00024f4398d67,
+        nr:Nca4431a7257143dcbad5c3eddc2bc40e .
+
+nr:Nad25787821f246cba296cd608bafe931 a nc:Threat ;
+    np:hasCode "10."^^xsd:string ;
+    np:hasLabel "Geological events"^^xsd:string ;
+    ns1:narrower nr:N5a666dcd01d14e89a1a0a883006ad335,
+        nr:N8f013911092340dda6371593dee61ac5,
+        nr:Nc97d56cd72a0432982a7644f5136fc5c .
+
+nr:Nb23fbab499644429b6df8095d4f9e425 a nc:Habitat ;
+    np:hasCode "11.1."^^xsd:string ;
+    np:hasLabel "Continental Slope/Bathyl Zone (200–4,000 m)"^^xsd:string ;
+    ns1:broader nr:N0aeb1e9e4b104745b66c04656a96d787 ;
+    ns1:narrower nr:N5a4046d992d34650a0a0dfc391f038f5,
+        nr:Nf6de87edf65b41f298f5b084396e5462 .
+
+nr:Nc8615d7b544d4444a57ffe5b88ed2d07 a nc:Threat ;
+    np:hasCode "8.5."^^xsd:string ;
+    np:hasLabel "Viral/prion-induced diseases"^^xsd:string ;
+    ns1:broader nr:Nec9782b460c74862887a8be6aa9ecca8 ;
+    ns1:narrower nr:Nd993a774a01d4f36870e3d0ca73fbc6b,
+        nr:Nf3ca83f119114ddc883d6c86f9129da1 .
+
+nr:Nf422ad99d7434e6393e061ad51f03a5f a nc:Threat ;
+    np:hasCode "1."^^xsd:string ;
+    np:hasLabel "Residential & commercial development"^^xsd:string ;
+    ns1:narrower nr:N18b6f611a2c54da192c7acda5d4610da,
+        nr:N5bce24dc8aec45298a1427d45e1ea849,
+        nr:N9fbcfb037a0a4bb6ae8fec48c5397b11 .
+
+nr:Nfadb953380a54a4cbf5b1627df860b4d a nc:Threat ;
+    np:hasCode "6."^^xsd:string ;
+    np:hasLabel "Human intrusions & disturbance"^^xsd:string ;
+    ns1:narrower nr:N457c8e88108f467799e47fb68ac8c285,
+        nr:N61a00b9a88564265aad70eb9280252c0,
+        nr:N80ddbeb9d3024ab3b4e9eb57712e959d .
+
+nr:N20e01b7f145e46a59aabc98670efa05d a nc:Measure ;
+    np:hasCode "3.1."^^xsd:string ;
+    np:hasLabel "Species management"^^xsd:string ;
+    ns1:broader nr:Naec2c3b10fd04eb7b7dd98ac730c5d36 ;
+    ns1:narrower nr:N009443a68ce8418284263ad990c41997,
+        nr:N592ed097d3b7462cb5ba8661c5846396,
+        nr:Na064a5e72b6e4d7c912186c6fe2db50a .
+
+nr:N395336761a954c2ab78e051883fe230a a nc:Threat ;
+    np:hasCode "5."^^xsd:string ;
+    np:hasLabel "Biological resource use"^^xsd:string ;
+    ns1:narrower nr:N1ca9c20bbbf64da1ad249c4470108d59,
+        nr:N6908e4c2a5784177b9c79b68fe73b2df,
+        nr:Na575cae135954266b571b1f80500728d,
+        nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa .
+
+nr:N44dce63ca52c414bb8a46c1e682f7f79 a nc:Threat ;
+    np:hasCode "2.4."^^xsd:string ;
+    np:hasLabel "Marine & freshwater aquaculture"^^xsd:string ;
+    ns1:broader nr:N8ef4f6d2ba7f4c918335220879b4746c ;
+    ns1:narrower nr:N3a41453cee9041e7a28b40e847902a45,
+        nr:N74883df9eb924c81b5914fb451339fbf,
+        nr:N7f188df1c458417d963bd1e75ea8fa39 .
+
+nr:N4e8ce42c696542dea59b34f0afde1356 a nc:Habitat ;
+    np:hasCode "10."^^xsd:string ;
+    np:hasLabel "Marine Oceanic"^^xsd:string ;
+    ns1:narrower nr:N0bcaa19052b84fac8fb964b41afd02c5,
+        nr:N1bc15b662bf34a058acb1732c66bc477,
+        nr:N6ff0e0c90e734f5f9922b6a703b896a1,
+        nr:Nb433874546c84aff82540d4e15484fb1 .
+
+nr:N73b612727e6942d29d20b99602e1d286 a nc:Measure ;
+    np:hasCode "5."^^xsd:string ;
+    np:hasLabel "Law & policy"^^xsd:string ;
+    ns1:narrower nr:N5e993183d88245ddbf1236f00c11a314,
+        nr:N668e2a733fb04955b92dd96cda47d145,
+        nr:Nb4d5bb66644449abbe722d702819cdc9,
+        nr:Nc57f341877fb4240a8cb65eb65954330 .
+
+nr:N7bbd766c51d243e7ba5ba8a53c1904ed a nc:Threat ;
+    np:hasCode "9.1."^^xsd:string ;
+    np:hasLabel "Domestic & urban waste water"^^xsd:string ;
+    ns1:broader nr:Nf9bd9164191342f3bf8297426d6f3d95 ;
+    ns1:narrower nr:N6c796684092243fbb5f4fc87ed373d0d,
+        nr:N8c0c5fc7c42d4d28b17b18b7c8dd79f4,
+        nr:Naefce0c0ba974d8c8bce49f094ad09b1 .
+
+nr:N8ef4f6d2ba7f4c918335220879b4746c a nc:Threat ;
+    np:hasCode "2."^^xsd:string ;
+    np:hasLabel "Agriculture & aquaculture"^^xsd:string ;
+    ns1:narrower nr:N44dce63ca52c414bb8a46c1e682f7f79,
+        nr:Nbabc8216f579456b9d3d044680bbb15f,
+        nr:Nc53195b7e8734847b3fa920de0587de8,
+        nr:Ncbefc2cd18b641fdbc0d76ba02d13759 .
+
+nr:N95a3b9824cdc48b7bce8db8d7dedd707 a nc:Threat ;
+    np:hasCode "4."^^xsd:string ;
+    np:hasLabel "Transportation & service corridors"^^xsd:string ;
+    ns1:narrower nr:N29003b9bd68a47cd8bdf0c72c7e5ece9,
+        nr:N398790a6a86441069ee2fede27b5ebdc,
+        nr:N9b091d8ddea945c5bb8be0152e8a54fa,
+        nr:Ncded092df8c045d593dc24e7983f4d88 .
+
+nr:Nacf0481930d64cafa61c27314b503ab5 a nc:Threat ;
+    np:hasCode "7.1."^^xsd:string ;
+    np:hasLabel "Fire & fire suppression"^^xsd:string ;
+    ns1:broader nr:N571f615c567840098fabc0a7844ccaf7 ;
+    ns1:narrower nr:N1d34e2c41b914bef9e3ebd7978502b37,
+        nr:N834097a745c94ba9b099c1b1b4822628,
+        nr:Ndaa9f7fdef9a44b882cf265e134ad698 .
+
+nr:Naec2c3b10fd04eb7b7dd98ac730c5d36 a nc:Measure ;
+    np:hasCode "3."^^xsd:string ;
+    np:hasLabel "Species management"^^xsd:string ;
+    ns1:narrower nr:N20e01b7f145e46a59aabc98670efa05d,
+        nr:N4f931f392b124627b3bda5eb2b0802f0,
+        nr:N643ea17fa7484bcba2c920ae9271ab2a,
+        nr:Na7ce1d32751949bfa2656f9d18be37e0 .
+
+nr:Nc975f22823b74b158b5673e06a90c0e5 a nc:Threat ;
+    np:hasCode "9.2."^^xsd:string ;
+    np:hasLabel "Industrial & military effluents"^^xsd:string ;
+    ns1:broader nr:Nf9bd9164191342f3bf8297426d6f3d95 ;
+    ns1:narrower nr:N13f388a297dd46358a2037553ccaff62,
+        nr:N759cdd9c036e401aab192aff6b0b144c,
+        nr:Ne75af1fc680e4b0aa9cd58b0238409e0 .
+
+nr:Ncbefc2cd18b641fdbc0d76ba02d13759 a nc:Threat ;
+    np:hasCode "2.2."^^xsd:string ;
+    np:hasLabel "Wood & pulp plantations"^^xsd:string ;
+    ns1:broader nr:N8ef4f6d2ba7f4c918335220879b4746c ;
+    ns1:narrower nr:N4903995c5c4942bab56d221d6a10c160,
+        nr:N4b67f11cf7fd45658843c9db0aaa9f7b,
+        nr:N9596e8eb97964846baa792d1d9ba777c .
+
+nr:N0156ebccf6284bcd9de318c2a808e6ee a nc:Measure ;
+    np:hasCode "6."^^xsd:string ;
+    np:hasLabel "Livelihood, economic & other incentives"^^xsd:string ;
+    ns1:narrower nr:N02e638cd52294f158b82745597a6712a,
+        nr:N330a5fbc96fc4df79ba3a40925fd64fb,
+        nr:N5a138dfba4984a159c5e8c1e1ceeb331,
+        nr:N9ff74a2f22e74ea8a90bc4d7327125c0,
+        nr:Ndb701baff79a44a7bd8088ea0d078aff .
+
+nr:N1ca9c20bbbf64da1ad249c4470108d59 a nc:Threat ;
+    np:hasCode "5.2."^^xsd:string ;
+    np:hasLabel "Gathering terrestrial plants"^^xsd:string ;
+    ns1:broader nr:N395336761a954c2ab78e051883fe230a ;
+    ns1:narrower nr:N218b5822f4834ce7b2b8cf626a2d0a3f,
+        nr:N797f7798687b4505a38b259f5850bd0f,
+        nr:N857d6063ef4740a5a7275117ccaf3552,
+        nr:Ne883eb574cde4e3a92c74069ed26346d .
+
+nr:N668e2a733fb04955b92dd96cda47d145 a nc:Measure ;
+    np:hasCode "5.4."^^xsd:string ;
+    np:hasLabel "Compliance and enforcemen"^^xsd:string ;
+    ns1:broader nr:N73b612727e6942d29d20b99602e1d286 ;
+    ns1:narrower nr:N2fb8299f7ab14462b076209caa49f99a,
+        nr:N79efe42124ca4ffca227afb8ce91876e,
+        nr:Nc00c2a0511044acb859e6a82dbb3030d,
+        nr:Nfdbfbfcdb70b45fb87e54f9775d53ef7 .
+
+nr:N6908e4c2a5784177b9c79b68fe73b2df a nc:Threat ;
+    np:hasCode "5.1."^^xsd:string ;
+    np:hasLabel "Hunting & collecting terrestrial animals"^^xsd:string ;
+    ns1:broader nr:N395336761a954c2ab78e051883fe230a ;
+    ns1:narrower nr:N130a51955bff47cfa7953e5ae30e0410,
+        nr:N4cc37d160bc740a0badd87ba4587b49b,
+        nr:N4ffb014bc00c48b0b5d6ab7d42d00a16,
+        nr:Ncde409250ff5421dab5de18cad78b455 .
+
+nr:N84b904bb3719409580d037a0e517bd83 a nc:Threat ;
+    np:hasCode "11."^^xsd:string ;
+    np:hasLabel "Climate change & severe weather"^^xsd:string ;
+    ns1:narrower nr:N044808705a7347208faa35a9498838ac,
+        nr:N412ce62f221141328466117c88a30f5d,
+        nr:N463120ca30534c9c981a03c61ccb0a64,
+        nr:N6e1179d94da048bd8e7bdf0674061dad,
+        nr:N8fb73b2009764208ac67f794de3a78af .
+
+nr:Nb4d5bb66644449abbe722d702819cdc9 a nc:Measure ;
+    np:hasCode "5.1."^^xsd:string ;
+    np:hasLabel "Legislation"^^xsd:string ;
+    ns1:broader nr:N73b612727e6942d29d20b99602e1d286 ;
+    ns1:narrower nr:N19b1ed0243574dfb97693a31caeef12b,
+        nr:N3d1a945d72ab4dfeb58b8fafdc27166e,
+        nr:Nb6eb289221a94768b16a6a9687cdb9ff,
+        nr:Ned614ac7c3404fa2a39a831a40ffca32 .
+
+nr:Nbabc8216f579456b9d3d044680bbb15f a nc:Threat ;
+    np:hasCode "2.1."^^xsd:string ;
+    np:hasLabel "Annual & perennial non-timber crops"^^xsd:string ;
+    ns1:broader nr:N8ef4f6d2ba7f4c918335220879b4746c ;
+    ns1:narrower nr:N697e0c83881d49b78c028bfd54f5553d,
+        nr:N77164aad60844d70b1af282733153428,
+        nr:Nc1bc1c8bef15408ea956537206b2d947,
+        nr:Nd2d67708080942ed9fb98175f73ea713 .
+
+nr:Nc53195b7e8734847b3fa920de0587de8 a nc:Threat ;
+    np:hasCode "2.3."^^xsd:string ;
+    np:hasLabel "Livestock farming & ranching"^^xsd:string ;
+    ns1:broader nr:N8ef4f6d2ba7f4c918335220879b4746c ;
+    ns1:narrower nr:N40484264ec9947d7b4f61d3f38ba966e,
+        nr:N8fa44a946eed4177a0d9b5e4b6d5fd6b,
+        nr:Na25c8a5eb0bd434a88e1c4193792dc87,
+        nr:Na2733454bc0e4cb78b8c7083d1c2d2bb .
+
+nr:Ne2fddc8e52914a98b45140eef1f5d5f7 a nc:Habitat ;
+    np:hasCode "13."^^xsd:string ;
+    np:hasLabel "Marine Coastal/Supratidal"^^xsd:string ;
+    ns1:narrower nr:N33259c70306144758c8f3d056bca7f86,
+        nr:N808659dd914d4195859aa229a13d177a,
+        nr:N87645c3281584f81ac34b5b3c295867d,
+        nr:N9df4b34656ce4e459fa2f99c83d5897a,
+        nr:Nbd96ed4a0e9d42248571131c57a8c3a0 .
+
+nr:N0aeb1e9e4b104745b66c04656a96d787 a nc:Habitat ;
+    np:hasCode "11."^^xsd:string ;
+    np:hasLabel "Marine Deep Ocean Floor (Benthic and Demersal)"^^xsd:string ;
+    ns1:narrower nr:N243eec4f0b634f568c1d3e114d1dd44a,
+        nr:N3f2ca0a5a9274eb8a3085bcdd18f7f61,
+        nr:N8223053b02ca4858807c5b19d00ffd32,
+        nr:Nb23fbab499644429b6df8095d4f9e425,
+        nr:Nd448442a30654c2aaf76a8f033c783db,
+        nr:Ne4ce019972d1449f9488d5052bcb64df .
+
+nr:N73267840854e4e3a8381f016b18987c2 a nc:Habitat ;
+    np:hasCode "14."^^xsd:string ;
+    np:hasLabel "Artificial – Terrestrial"^^xsd:string ;
+    ns1:narrower nr:N4f5e63c02f654f6e84fb3c481ceb27df,
+        nr:N6344aa07e35b4ad69805a1c774604930,
+        nr:Nb1610609a5c94ccbb4542ff8bb86a373,
+        nr:Nb61111e57ebd4208a1cd46008aab5044,
+        nr:Nd8bdb907329d4f08bb4d3110079bfef6,
+        nr:Nf122dee43fb34512a39fc87380b9c7e5 .
+
+nr:Na575cae135954266b571b1f80500728d a nc:Threat ;
+    np:hasCode "5.3."^^xsd:string ;
+    np:hasLabel "Logging & wood harvesting"^^xsd:string ;
+    ns1:broader nr:N395336761a954c2ab78e051883fe230a ;
+    ns1:narrower nr:N65961a672ddb428993e7b24c6b93d6a5,
+        nr:N67a67f735e774be080b86e6b57779139,
+        nr:Nc99a9a2cd3a2471fbf764065cb839127,
+        nr:Ndadd4df149fa49c5b08aa9bd4dd299b8,
+        nr:Ne89176bcecfb43369ff7a424047484ff .
+
+nr:Nec9782b460c74862887a8be6aa9ecca8 a nc:Threat ;
+    np:hasCode "8."^^xsd:string ;
+    np:hasLabel "Invasive & other problematic species, genes & diseases"^^xsd:string ;
+    ns1:narrower nr:N11054f3267764ccbabd33638a70c8b85,
+        nr:N587254e86cec478cb2f865655e8fc470,
+        nr:N87969832178a4a66bb4c25b6013b4453,
+        nr:N97189cc29997413a82f007d6fac0770a,
+        nr:Nc8615d7b544d4444a57ffe5b88ed2d07,
+        nr:Ned5892ce5dcd444ba1562fe349e4e111 .
+
+nr:N2b52480461d9492fbaa883791930b7d9 a nc:Habitat ;
+    np:hasCode "4."^^xsd:string ;
+    np:hasLabel "Grassland"^^xsd:string ;
+    ns1:narrower nr:N06ee34a38d37414b8eba00d97caa5847,
+        nr:N0fe4495bcca844828edcb94d358a820f,
+        nr:N25cc10b05eaf497f85a0303e1b9158f1,
+        nr:N7ddc55b48f0b483f98df351ae863b59a,
+        nr:N9b9b43bce530452ca2414cf1901ba110,
+        nr:Ne6d1af3538364686a698053656f77d86,
+        nr:Nfe0504b41259496aa183d241355c0e53 .
+
+nr:N54f55f57e96143deb85d1e93a09af1bf a nc:Habitat ;
+    np:hasCode "12."^^xsd:string ;
+    np:hasLabel "Marine Intertidal"^^xsd:string ;
+    ns1:narrower nr:N304c4dd42bab42fa96d5ecbf5cbc54bb,
+        nr:N35f1263ab4384a83b73cd8edf4a68453,
+        nr:N5efef1f41f0243d79fb8929284a9621d,
+        nr:N8af9797cedf94b86bdf50441b3a04695,
+        nr:Na5a20a7c3bd04b089b6601552383d319,
+        nr:Nebb702d22ef44ef399d9f95752fc6d85,
+        nr:Nfc6616a667f445b8916061f71adc9003 .
+
+nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e a nc:Habitat ;
+    np:hasCode "9.8."^^xsd:string ;
+    np:hasLabel "Marine Neritic – Coral Reef"^^xsd:string ;
+    ns1:broader nr:Nb312bfedcc574294a382c48fb9896267 ;
+    ns1:narrower nr:N181192a4116c48b2b845f5567f4f41c8,
+        nr:N1f5e49bd71834c038aac0a4a0c74e74c,
+        nr:N5e9d952af7b04268ad09da2b82f245a3,
+        nr:N7dbc322de58f4241908f6333fdf61fc4,
+        nr:N95e26a66026d465c9cb57147f654a9ce,
+        nr:Nb470bacb18394858bd0e2aabcbafba7e .
+
+nr:Ndf87d5fe6cc14df4ab0b223e4d6918aa a nc:Threat ;
+    np:hasCode "5.4."^^xsd:string ;
+    np:hasLabel "Fishing & harvesting aquatic resources"^^xsd:string ;
+    ns1:broader nr:N395336761a954c2ab78e051883fe230a ;
+    ns1:narrower nr:N0afe6074b065456d89ffc99e3da626ed,
+        nr:N54180f2901c8464b9b468020cfdf0e96,
+        nr:N6ee92808ed074c83981c86ba6107a617,
+        nr:N7d5661bf83f34427bd57160ac77ce374,
+        nr:Nda4f3fb4336e4f9dac9c5f57e531860f,
+        nr:Nf9dc340caef24dceaf6c97cb14352dd1 .
+
+nr:N8b19bfc04f484d498c4609ee37840ac2 a nc:Habitat ;
+    np:hasCode "3."^^xsd:string ;
+    np:hasLabel "Shrubland"^^xsd:string ;
+    ns1:narrower nr:N18c5ead8ca884885ad3c3a49178a0b2c,
+        nr:N22e98e7b4cdd4e8dba2582979de4cc90,
+        nr:N54dcc7ea33b54e1ea3042cc5b59717cc,
+        nr:N85374ef53ac945518e3abe2d4ff648b4,
+        nr:Naaa9dddd5190490795dda3b112a8e28e,
+        nr:Nb9275bb26b0d45799b3243c3db99bec7,
+        nr:Ne3aec127664846d5b5299bcdbf2028ea,
+        nr:Nea340260e435452689a947ba64f4bbd1 .
+
+nr:N218f89d83db14b049136b740b4b3ecbf a nc:Habitat ;
+    np:hasCode "1."^^xsd:string ;
+    np:hasLabel "Forest"^^xsd:string ;
+    ns1:narrower nr:N08c78cb5ca9a41a7b3b297a8f10052a0,
+        nr:N726a42bcc29846f39da3fba0cc403600,
+        nr:N7deb0455ea094be09a9bbca0138d14d6,
+        nr:Naa892b9c555a4f358938e4a35d08ce4e,
+        nr:Nad3037a9a61849609fb461e9f6407b64,
+        nr:Nb86ca6653a19460ab5a30167a7f4afe5,
+        nr:Nb96441ab46e249c0860a294fcbfb02ab,
+        nr:Ne5dc512e47db44eeb5a45ed86d061ca7,
+        nr:Nf0215beb7f474088aa4604b4a3696545 .
+
+nr:Nb312bfedcc574294a382c48fb9896267 a nc:Habitat ;
+    np:hasCode "9."^^xsd:string ;
+    np:hasLabel "Marine Neritic"^^xsd:string ;
+    ns1:narrower nr:N17a26eb49444482b8d8ee4121df01d2d,
+        nr:N2d7764c35d3542daa94a712c715511ac,
+        nr:N5925f002d9ba4e21b6d62cee7972f91d,
+        nr:N85c26a91ec6a4630b3be865732d92c53,
+        nr:N956930a45a1848baa5286eade000600a,
+        nr:Na3cc7d90b02e4328a3907b60b401eef6,
+        nr:Nb0bd8b9a40e44fad802816a4dbb3cc0e,
+        nr:Nd8b2b9fc4cc843fa9eacc2795aaf0526,
+        nr:Nf81b90c8a2754e7693a5a49a2b3513c3,
+        nr:Nfb0f23174ff24ceb8c95812b6c73baf0 .
+
+nr:N3282c3bd390e49d391c60877aedded9f a nc:Threat ;
+    np:hasCode "7.2."^^xsd:string ;
+    np:hasLabel "Dams & water management/use"^^xsd:string ;
+    ns1:broader nr:N571f615c567840098fabc0a7844ccaf7 ;
+    ns1:narrower nr:N064fb5212c7c4011bf575d54cb727345,
+        nr:N1555d28b06444221b5122002d496fd35,
+        nr:N2a9ae7e066d34ab1a69fe4652ec635d0,
+        nr:N47b1b63eb0ec4fb798e661a14af53b9b,
+        nr:N660991d0460c4d7482b74c793052fe8a,
+        nr:Nae2f1e159aaa430cb674ae1c21a22c1d,
+        nr:Nb1f3aef31e694924a61a367ffd4e6e3d,
+        nr:Nb6205575d9f14dd5ac31816cbabe0afa,
+        nr:Nbec38686670e43869912c0c477950b85,
+        nr:Ncdaaf254b8894922a86f332fe1c684d9,
+        nr:Ncf576bfdf6d04013a3385ea03c1f96fc .
+
+nr:N4d1e99bc3a38468980a876ed79a7f318 a nc:Habitat ;
+    np:hasCode "15."^^xsd:string ;
+    np:hasLabel "Artificial – Aquatic"^^xsd:string ;
+    ns1:narrower nr:N02ac0ff82d8d4959b400cfef30e1e7a6,
+        nr:N094effc35333457089a078fa82a87d7c,
+        nr:N1587de611c52434da1db2bac0c6a7bc4,
+        nr:N21132aae1e7643199483f39f21879db5,
+        nr:N2f54c6391c01433db6b038b8d8fbcc86,
+        nr:N3e4c86b330f6421596e2d1f892ab988c,
+        nr:N50d7a4fa90544960a240fc80ac80befd,
+        nr:N905001dbb7464ff6afcbf9a844588a13,
+        nr:Naccf0208a60442e6b9d799b797810057,
+        nr:Nb741a7f1ee904036a0a3abbc821b2b90,
+        nr:Nc7ad4b9d36284bd18db3b2da309d3f63,
+        nr:Nd824cbe45ff24f1db369cdf251a85965,
+        nr:Ne8537c59b5a04f3eb52284f4a32d1589 .
+
+nr:N96b5474ed97c40ddaf27fad24cc4e02c a nc:Habitat ;
+    np:hasCode "5."^^xsd:string ;
+    np:hasLabel "Wetlands (inland)"^^xsd:string ;
+    ns1:narrower nr:N14ca7fed11e048ef81d1812b75407e5f,
+        nr:N29f828fe477849a58d890291910ba591,
+        nr:N2bee381426ae4bc0b989cae27992c69a,
+        nr:N2e67848f460347ae94c330c1b28038fd,
+        nr:N454c7df99c6b4a0daa70cba88425f0da,
+        nr:N5520d8f49e3b4087ad5fa23a782f63ab,
+        nr:N5c6b96809a3a4fae8bb1b0b3346f4e9e,
+        nr:N5e548347483a4a2a9f3703ff4458bbe9,
+        nr:N7006cdb5302246b49fc7603d7c663533,
+        nr:N8987acbcf14b40f29de3856f2bbd4b86,
+        nr:N8acb0271626f4a9f9a00854ba2bf2574,
+        nr:N8ecc6bb275b844199a2f19c43f1190b4,
+        nr:N93f2f54363394e2fb9c84cb504f99d27,
+        nr:Nafe1e5d0c59d455493cc372dc06ff6f4,
+        nr:Nb5aea28942b5475bb9679da6756b92e7,
+        nr:Ndc73939556ac431880565801a44b7327,
+        nr:Nf1094e21285344e8ac4f24e3d2a8f234,
+        nr:Nfe27578da5de464098466bcad781524f .
+
+nc:Measure a <http://xmlns.com/foaf/0.1/Class> .
+
+nc:Threat a <http://xmlns.com/foaf/0.1/Class> .
+
+nc:Habitat a <http://xmlns.com/foaf/0.1/Class> .
+

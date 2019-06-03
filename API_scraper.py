@@ -104,7 +104,15 @@ except:
         # habitats
         api_request = 'habitats/species/id/' + str(taxonid)
         url = api_endpoint + api_request + token
-        animal_result = requests.get(url=url).json()
+        animal_result = requests.get(url=url)
+        try:
+            animal_result = animal_result.json()
+        except:
+            print("Error in habitat retrieval")
+            print(taxonid)
+            print(animal_result)
+            skipped.append(taxonid)
+            continue
         animal['habitats'] = animal_result['result']
         # measures
         api_request = 'measures/species/id/' + str(taxonid)
@@ -126,6 +134,9 @@ except:
         j = json.dumps(mammals, indent=4)
         print(j, file=fout)
         print("Mammals written to file.")
+
+    print(skipped)
+print(len([m for m in mammals if 'measures' in m]))
 
 # for every animal in the api, retrieve all the different types of information
 # for animal in animals:
