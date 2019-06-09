@@ -1,3 +1,10 @@
 # krw
 Knowledge representation on the web
-only 1 download: https://send.firefox.com/download/cebf12df67c428c0/#J6UACWb7Vq0pYmZOBrtdoA
+
+Web App:
+Install Node.js and React.
+Move to iucn folder and install dependecies.
+In the file local_triplestore.js, make sure it points to the local triplestore.
+
+Triplestore:
+Run GraphDB and import iucn-full.ttl, ontology_linking.ttl and biome_species_map.ttl
