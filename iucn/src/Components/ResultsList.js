@@ -10,6 +10,8 @@ import GridListTileBar from '@material-ui/core/GridListTileBar'
 import image from '../Img/bonobo.jpg'
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
+import {connect} from 'react-redux';
+import {retrieveAnimalDetails} from '../actions/retrieveActions'
 
 const styles = theme => ({
   root: {
@@ -17,78 +19,35 @@ const styles = theme => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    maxWidth: 600,
-    height: '100%',
+    width: 600,
+    maxHeight: 450,
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
   },
 });
 
-const tileData = [
-  {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
- },
- {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
-  },
-  {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
-  },
-  {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
- },
- {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
-  },
-  {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
-  },
-  {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
- },
- {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
-  },
-  {
-   img: image,
-   title: 'Bonobo',
-   author: 'VU',
-  },
-];
-
 
 function ResultsList(props) {
-  const { classes } = props;
+  const { classes, animalList, dispatch } = props;
+  console.log(animalList)
 
   return(
     <div className={classes.root}>
+    <div className='Full-width'>
      <GridList cellHeight={160} className={classes.gridList} cols={3}>
-     {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+     {animalList.map(tile => {
+       // console.log(tile.image)
+       return (
+          <GridListTile key={tile.taxon}
+          onClick={() => dispatch(retrieveAnimalDetails(tile))}
+          >
+            <img src={tile.image} alt={tile.name} />
             <GridListTileBar
-              title={tile.title}
-              subtitle={<span>IUCN Category: {tile.author}</span>}
+              title={tile.name}
+              subtitle={<span>{tile.taxon}</span>}
               actionIcon={
                 <IconButton className={classes.icon}>
                   <InfoIcon />
@@ -96,8 +55,9 @@ function ResultsList(props) {
               }
             />
           </GridListTile>
-        ))}
+        )})}
      </GridList>
+   </div>
    </div>
   )
 }
@@ -106,4 +66,10 @@ ResultsList.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ResultsList)
+function mapStateToProps(state) {
+  return {
+    animalList: state.animals.list
+  }
+}
+
+export default connect(mapStateToProps)(withStyles(styles)(ResultsList))

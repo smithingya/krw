@@ -1,0 +1,20 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix wwf_c: <http://WWF.org/class/> .
+@prefix wwf_p: <http://WWF.org/property/> .
+@prefix wwf_r: <http://WWF.org/resource/> .
+@prefix nc: <http://iucn-knowledge-graph.org/class/> .
+@prefix np: <http://iucn-knowledge-graph.org/property/> .
+@prefix nr: <http://iucn-knowledge-graph.org/resource/> .
+
+nc:Mammal rdfs:subClassOf wwf_c:Species .
+wwf_p:hasGenusSpeciesName owl:sameAs np:hasScientificName .
+np:hasScientificName a owl:InverseFunctionalProperty .
+np:hasScientificName a owl:FunctionalProperty .
+
+nc:Kingdom rdfs:subClassOf nc:Rank .
+nc:Phylum rdfs:subClassOf nc:Rank .
+nc:Class rdfs:subClassOf nc:Rank .
+nc:Order rdfs:subClassOf nc:Rank .
+nc:Family rdfs:subClassOf nc:Rank .
+nc:Genus rdfs:subClassOf nc:Rank .

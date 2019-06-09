@@ -6,7 +6,7 @@ from rdflib.namespace import RDF, FOAF, XSD, RDFS, SKOS
 import re, string
 
 try:
-    with open("mammals-0-100.json", "r") as read_file:
+    with open("mammals.json", "r") as read_file:
         print("Loading mammals from file.")
         mammals = json.load(read_file)
 except:
@@ -17,9 +17,7 @@ nc = Namespace("http://iucn-knowledge-graph.org/class/")
 np = Namespace("http://iucn-knowledge-graph.org/property/")
 nr = Namespace("http://iucn-knowledge-graph.org/resource/")
 g = Graph()
-g.bind('nc', nc)
-g.bind('np', np)
-g.bind('nr', nr)
+g.parse('classifications.ttl',format='turtle')
 
 iucnToRdfMap = {
     'taxonid':{
@@ -197,6 +195,7 @@ iucnToRdfMap = {
         'propertyName': 'hasAmendReason',
         'className': None
     },
+    # start of threaths, habitats and measures
     "code": {
         'type': XSD.string,
         'propertyName': 'hasCode',
@@ -231,11 +230,6 @@ iucnToRdfMap = {
         'type': XSD.boolean,
         'propertyName': 'isInvasive',
         'className': None
-    },
-    "habitat": {
-        'type': XSD.string,
-        'propertyName': 'hasHabitat',
-        'className': 'Habitat'
     },
     "suitability": {
         'type': XSD.string,
@@ -277,24 +271,30 @@ for mammal in mammals:
     for key in mammal:
         if key in ['threats','habitats','measures']:
             k = key[:-1].title()
-            threats = mammal[key]
-            for threat in threats:
-                tr = BNode()
-                g.add( (nr[newMammal], np['has'+k] , nr[tr]) )
-                g.add( (nr[tr], RDF.type , nc[k]) )
-                for key2 in threat:
-                    value = threat[key2]
+            classifications = mammal[key]
+            for classification in classifications:
+                c = BNode()
+                g.add( (nr[newMammal], np['has'+k] , nr[c]) )
+                g.add( (nr[c], RDF.type, nc[k]) )
+                code = classification['code']
+                t = Literal(code, datatype = XSD.string)
+                q = g.query(
+                    'SELECT ?n \
+                    WHERE { \
+                        ?n np:hasCode ?code. \
+                        ?n rdfs:subClassOf ?class \
+                    }'
+                , initBindings = {'code': t, 'class': nc[k]})
+                for x in q:
+                    g.add( (nr[c], RDF.type, x[0]) )
+                for key2 in classification:
+                    if key2 in ['code','title','habitat']:
+                        continue
+                    value = classification[key2]
                     mapping = iucnToRdfMap[key2]
                     t = mapping['type']
                     propertyName = mapping['propertyName']
-                    className = mapping['className']
-                    if className == None:
-                        g.add( (nr[tr], np[propertyName], Literal(value, datatype=t)) )
-                    else:
-                        b = BNode()
-                        g.add( (nr[tr], np[propertyName] , nr[b]) )
-                        g.add( (nr[b], RDF.type, nc[className]) )
-                        g.add( (nr[b], RDFS.label, Literal(value, datatype=t)) )
+                    g.add( (nr[c], np[propertyName], Literal(value, datatype=t)) )
         else:
             value = mammal[key]
             if value == None:
@@ -309,6 +309,9 @@ for mammal in mammals:
                 splitter = re.compile("(?<=\.),?\s&?\s?")
                 assesors = splitter.split(value)
                 for ass in assesors:
+                    if 'tufek, B' in ass:
+                        ass = 'Kryštufek, B.'
+                        # print(ass)
                     ass = '_'.join(ass.translate(
                         str.maketrans('', '', string.punctuation)
                         ).split())
@@ -316,31 +319,55 @@ for mammal in mammals:
                     g.add( (nr[ass], RDF.type, nc[className]) )
                     g.add( (nr[ass], RDFS.label, Literal(ass, datatype=t)) )
             else:
-                b = BNode()
+                # b = BNode()
                 value_pure = value
                 if t == XSD.string:
                     value = '_'.join(value.translate(
                         str.maketrans('', '', string.punctuation)
                         ).title().split())
-                g.add( (nr[newMammal], np[propertyName] , nr[b]) )
-                g.add( (nr[b], RDF.type, nc[className]) )
-                g.add( (nr[b], RDFS.label, Literal(value_pure, datatype=t)) )
+                g.add( (nr[newMammal], np[propertyName] , nr[value]) )
+                g.add( (nr[value], RDF.type, nc[className]) )
+                g.add( (nr[value], RDFS.label, Literal(value_pure, datatype=t)) )
 
 
-q = g.query(
-    'SELECT ?c ?parentnode ?childnode ?parentcode ?childcode \
-    WHERE { \
-         ?parentnode np:hasCode ?parentcode; a ?c. \
-         ?childnode np:hasCode ?childcode; a ?c. \
-         FILTER STRSTARTS(?childcode, ?parentcode) \
-         FILTER (?childcode != ?parentcode) \
-    } LIMIT 10'
-)
+# q = g.query(
+#     'SELECT ?c1 ?c2 ?parentnode ?childnode ?parentcode ?childcode \
+#     WHERE { \
+#          ?parentnode a ?c1. \
+#          ?c1 np:hasCode ?parentcode.\
+#          ?childnode a ?c2. \
+#          ?c2 np:hasCode ?childcode. \
+#          ?c2 rdfs:subClassOf ?c1.\
+#          FILTER STRSTARTS(?childcode, ?parentcode) \
+#          FILTER (?childcode != ?parentcode) \
+#     } LIMIT 10'
+# )
 
-for c in q:
-    print(*c)
+# q = g.query(
+#     'SELECT ?c ?code ?name ?cl ?subcl ?topcl\
+#     WHERE { \
+#         ?c np:hasCode ?code. \
+#         ?c np:hasLabel ?name. \
+#         ?c a ?cl. \
+#         ?c rdfs:subClassOf/np:hasLabel ?subcl. \
+#         ?c rdfs:subClassOf/rdfs:subClassOf ?topcl. \
+#     } LIMIT 10'
+# , initBindings = {'class': nc['Threat']})
 
+# q = g.query(
+#     'SELECT ?animalName ?threat ?threatType ?p ?o\
+#     WHERE { \
+#         ?animal np:hasScientificName ?animalName. \
+#         ?animal ?class ?threat. \
+#         ?threat a ?threatType. \
+#         ?threatType ?p ?o.\
+#     } ORDER BY ?animalName LIMIT 10 '
+# , initBindings = {'class': np['hasHabitat']})
 
+# for c in q:
+#     print(*c)
+
+g.serialize('iucn-full.ttl', format='turtle', encoding='unicode')
 
 # for a,l,t in g.query('SELECT ?animal_label ?label ?threat_label WHERE \
 #     { ?animal a nc:Mammal. \

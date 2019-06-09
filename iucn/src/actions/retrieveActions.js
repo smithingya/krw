@@ -1,0 +1,326 @@
+import defaultImage from '../Img/IUCN_Red_List.svg.png'
+import * as search from './searchActions'
+
+const axios = require("axios");
+
+export function clickedRetrieval(string,type){
+  return function(dispatch){
+    dispatch(retrieveAnimalNames(string,type))
+    if (type == 'rank' || type == 'category'){
+      string = string.replace(/.*\//g,'')
+    }
+    dispatch(search.typeChange(type))
+    dispatch(search.inputChange(string))
+  }
+}
+
+export function retrieveAnimalNames(string, type){
+  var animals = []
+  var q = '';
+  switch (type) {
+    case 'animal': q = BY_NAME;
+      break;
+    case 'habitat': q = BY_HABITAT;
+      break;
+    case 'threat': q = BY_THREAT;
+      break;
+    case 'measure': q = BY_MEASURE;
+      break;
+    case 'ecoregion': q = BY_ECOREGION;
+      break;
+    case 'rank': q = BY_TAXON_RANK;
+      break;
+    case 'category': q = BY_CATEGORY;
+      break;
+  };
+
+  q = q.replace("SEARCHSTRING", string)
+
+  return function(dispatch) {
+    animals = axios.get('http://192.168.1.9:7200/repositories/IUCN',{
+      headers: {'Accept': 'application/sparql-results+json'},
+      params: {
+        query: q
+      }
+    })
+    .then(function (response) {
+      var animals = response.data.results.bindings;
+      var promises = []
+      if (animals[0].taxon == undefined){
+        dispatch(retrieved(animals))
+        return
+      }
+      animals.forEach(function(item, index, array){
+        var taxon = item.taxon.value;
+        array[index].image = defaultImage
+        var qq = GET_IMAGES.replace('TAXON', taxon)
+        promises[index] = axios.get('https://query.wikidata.org/sparql',{
+          headers: {'Accept': 'application/sparql-results+json'},
+          params: {
+            query: qq
+          }
+        })
+        .then(function (response){
+          if (response.data.results.bindings[0] == undefined){
+            var im = defaultImage;
+            array[index].image = im
+            return im
+          }
+          var im = response.data.results.bindings[0].image.value
+          array[index].image = im
+          return im
+        })
+        .catch(function (error) {
+          console.log(error);
+        })
+        array[index].animal = item.animal.value;
+        array[index].name = item.name.value;
+        array[index].taxon = taxon
+      })
+      Promise.all(promises).then(() => dispatch(imagesRetrieved(animals)))
+      // return animals
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+  }
+}
+
+function retrieved(animals) {
+  return{
+    type: "RETRIEVED_ANIMALS",
+    payload: animals,
+  }
+}
+function imagesRetrieved(animals) {
+  return{
+    type: "IMAGES_RETRIEVED",
+    payload: animals,
+  }
+}
+
+export function retrieveAnimalDetails(animal){
+  if (animal.detailsRetrieved){
+    return {
+      type: "SELECTED_ANIMAL",
+      payload: animal,
+    }
+  }
+  return function(dispatch){
+    var q = DETAILS.replace('ANIMAL',animal.animal)
+    var res = axios.get('http://192.168.1.9:7200/repositories/IUCN',{
+      headers: {'Accept': 'application/sparql-results+json'},
+      params: {
+        query: q
+      }
+    })
+    .then(function (res){
+      var details = res.data.results.bindings
+      console.log(details)
+      details.forEach(function(item, index, array){
+        var prop = item.property.value.replace(/.*\//g,'')
+        if (item.value.type == 'literal'){
+          animal[prop] = item.value.value
+        }
+        else if (item.code != undefined){
+          if (animal[prop] == undefined){
+            animal[prop] = {}
+          }
+          // this is the case for threats, habitats and measures
+          var code = item.code.value
+          var label = item.label.value
+          var type = item.subval.value
+          var id = item.value.value.replace(/.*\//g,'') // unique identifier for threat,habitat and measure
+          if (animal[prop][id] == undefined){
+            animal[prop][id] = {}
+            animal[prop][id].code = []
+            animal[prop][id].label = []
+            animal[prop][id].type = []
+          }
+          animal[prop][id].code.push(code)
+          animal[prop][id].label.push(label)
+          animal[prop][id].type.push(type)
+          // var o = {code,label,type}
+          // if (!animal[prop].some(elem => JSON.stringify(elem) === JSON.stringify(o))){
+          //   animal[prop].push(o)
+          // }
+        }
+        else if (item.subp.value != "http://www.w3.org/1999/02/22-rdf-syntax-ns#type") {
+          // this is the case for all other things
+          if (animal[prop] == undefined){
+            animal[prop] = {}
+          }
+          var obj = animal[prop]
+          var subprop = item.subp.value.replace(/.*\//g,'').replace(/.*#/g,'')
+          var id = item.value.value.replace(/.*\//g,'')
+          if (obj[id] == undefined){
+            obj[id] = {}
+          }
+          obj[id][subprop] = item.subval.value
+          obj[id].link = item.value.value
+        }
+      })
+      animal.detailsRetrieved = true
+      dispatch(detailsRetrieved(animal))
+    })
+  }
+}
+
+function detailsRetrieved(animal){
+  return {
+    type: "SELECTED_ANIMAL",
+    payload: animal,
+  }
+}
+
+const DETAILS = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?property ?value ?subp ?subval ?code ?label
+WHERE {
+    <ANIMAL> ?property ?value .
+    OPTIONAL {
+        ?value ?subp ?subval.
+        OPTIONAL {
+            ?subval np:hasCode ?code.
+            ?subval np:hasLabel ?label .
+        }
+    }
+    FILTER (?property != owl:sameAs)
+    FILTER (?property != rdf:type)
+}`;
+
+const BY_NAME = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE {
+    ?animal np:hasCommonName ?name .
+    ?animal np:hasTaxonId ?id .
+    ?animal np:hasScientificName ?taxon .
+    FILTER CONTAINS(LCASE(?name), LCASE('SEARCHSTRING'))
+}
+GROUP BY ?taxon
+`;
+
+const BY_HABITAT = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE{
+    ?animal np:hasHabitat ?habitat ;
+        np:hasCommonName ?name ;
+        np:hasScientificName ?taxon .
+    ?habitat rdf:type ?habitatType .
+    ?habitatType ?p ?c .
+    FILTER (?p = np:hasCode || ?p = np:hasLabel)
+    FILTER CONTAINS(LCASE(?c), LCASE('SEARCHSTRING'))
+}
+GROUP BY ?taxon
+`;
+
+const BY_THREAT = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE{
+    ?animal np:hasThreat ?threat ;
+        np:hasCommonName ?name ;
+        np:hasScientificName ?taxon .
+    ?threat rdf:type ?threatType .
+    ?threatType ?p ?c .
+    FILTER (?p = np:hasCode || ?p = np:hasLabel)
+    FILTER CONTAINS(LCASE(?c), LCASE('SEARCHSTRING'))
+}
+GROUP BY ?taxon
+`;
+
+const BY_MEASURE = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE{
+    ?animal np:hasMeasure ?measure ;
+        np:hasCommonName ?name ;
+        np:hasScientificName ?taxon .
+    ?measure a ?measureType .
+    ?measureType ?p ?c .
+    FILTER (?p = np:hasCode || ?p = np:hasLabel)
+    FILTER CONTAINS(LCASE(?c), LCASE('SEARCHSTRING'))
+}
+GROUP BY ?taxon
+`;
+
+const BY_ECOREGION = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wwf_p: <http://WWF.org/property/>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE{
+    ?animal np:hasCommonName ?name ;
+        np:hasScientificName ?taxon ;
+        wwf_p:hasEcoregion ?c .
+    FILTER CONTAINS(LCASE(?c), LCASE('SEARCHSTRING'))
+}
+GROUP BY ?taxon
+`;
+
+const BY_TAXON_RANK = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE{
+    ?animal ?p <SEARCHSTRING> ;
+        np:hasCommonName ?name ;
+        np:hasScientificName ?taxon .
+}
+GROUP BY ?taxon
+`;
+
+const BY_CATEGORY = `
+PREFIX nc: <http://iucn-knowledge-graph.org/class/>
+PREFIX np: <http://iucn-knowledge-graph.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT (SAMPLE(?animal) AS ?animal) (SAMPLE(?name) AS ?name) ?taxon
+WHERE{
+    ?animal ?p <SEARCHSTRING> ;
+        np:hasCommonName ?name ;
+        np:hasScientificName ?taxon .
+}
+GROUP BY ?taxon
+`;
+
+const GET_IMAGES= `
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?animal_wikidata ?image WHERE {
+  ?s wdt:P225 'TAXON' .
+  ?s wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} LIMIT 1
+`

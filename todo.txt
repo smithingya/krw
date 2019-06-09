@@ -1,0 +1,6 @@
+classifications met dieren combineren - done
+dieren met wikidata combineren - federated queries in de tool
+dieren met wwf combineren
+graphdb inladen - done
+docker met graphdb, python packages, react
+webtool met grlc en graphdb linken

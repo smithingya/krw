@@ -28,19 +28,19 @@ const styles = theme => ({
 function App(props) {
   const { classes } = props;
   return (
-    <div className="App" className='Full-height'>
-      <Grid container spacing={0} className='Full-height'>
+    <div className="App" className='Full-height' style={{overflow: 'hidden'}}>
+      <Grid container spacing={0} className='Full-height' style={{overflow: 'hidden'}}>
         <Grid item xs={6} container alignItems="center" direction="column" spacing={16}>
           <Grid item className={classes.topmargin}>
               <SearchBar />
           </Grid>
-          <Grid item>
-            <ResultsList />
+          <Grid item >
+            <ResultsList className='Full-width' />
           </Grid>
         </Grid>
         <Grid item xs={6} container spacing={8} direction="column" className={classes.smalltopmargin}>
-          <Grid item xs={6} className='Full-width'>
-            <InfoCard />
+          <Grid item xs={6} className='Full-width' style={{maxHeight: '400px'}}>
+            <InfoCard style={{overflow: 'hidden'}}/>
           </Grid>
           <Grid item xs={6} className='Full-width'>
             <MyMapComponent />

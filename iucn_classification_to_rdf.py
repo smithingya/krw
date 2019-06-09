@@ -30,34 +30,36 @@ g.bind('nc', nc)
 g.bind('np', np)
 g.bind('nr', nr)
 
-g.add((nc['Threat'], RDF.type, FOAF.Class))
-g.add((nc['Habitat'], RDF.type, FOAF.Class))
-g.add((nc['Measure'], RDF.type, FOAF.Class))
-
-def addRows(rows, cl):
+def addRows(rows, cl, pr=False):
+    g.add((nc[cl], RDF.type, FOAF.Class))
     for row in rows:
+        if pr:
+            print(row)
         code, label = row
         if label == '':
             continue
         label = label.strip()
-        b = BNode()
-        g.add( (nr[b], RDF.type, nc[cl]) )
-        g.add( (nr[b], np['hasCode'], Literal(code, datatype = XSD.string)) )
-        g.add( (nr[b], np['hasLabel'], Literal(label, datatype = XSD.string)) )
+        # b = BNode()
+        b = cl + '#' + code[:-1]
+        g.add( (nc[b], RDF.type, FOAF.Class) )
+        g.add( (nc[b], np['hasCode'], Literal(code[:-1], datatype = XSD.string)) )
+        g.add( (nc[b], np['hasLabel'], Literal(label, datatype = XSD.string)) )
+        g.add( (nc[b], RDFS.subClassOf, nc[cl]) )
         if len(code) > 3: # two digit number with a dot
-            top_level = '.'.join(code.split('.')[:-2]+[''])
-            t = Literal(top_level, datatype = XSD.string)
-            q = g.query(
-                'SELECT ?n \
-                WHERE { \
-                    ?n np:hasCode ?top_level. \
-                    ?n np:hasLabel ?label. \
-                    ?n a ?class \
-                }'
-            , initBindings = {'top_level': t, 'class': nc[cl]})
-            for c in q:
-                g.add( (c[0], SKOS.narrower, nr[b]) )
-                g.add( (nr[b], SKOS.broader, c[0]) )
+            top_level = '.'.join(code.split('.')[:-2])
+            tl = cl + '#' + top_level
+            g.add( (nc[b], RDFS.subClassOf, nc[tl]) )
+            # t = Literal(top_level, datatype = XSD.string)
+            # q = g.query(
+            #     'SELECT ?n \
+            #     WHERE { \
+            #         ?n np:hasCode ?top_level. \
+            #         ?n np:hasLabel ?label. \
+            #         ?n rdfs:subClassOf ?class \
+            #     }'
+            # , initBindings = {'top_level': t, 'class': nc[cl]})
+            # for c in q:
+            #     g.add( (nc[b], RDFS.subClassOf, c[0]) )
 
 addRows(threats, 'Threat')
 addRows(habitats, 'Habitat')
