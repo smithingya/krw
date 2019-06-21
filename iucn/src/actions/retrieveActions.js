@@ -37,7 +37,7 @@ export function clickedRetrieval(string,type){
   }
 }
 
-function retrieveAnimalsByWar(string){
+export function retrieveAnimalsByWar(string){
   return function(dispatch){
     dispatch(search.searchPending())
     var latlng = string.split(",")
@@ -178,8 +178,8 @@ function retrieveImages(animals){
       array[index].image = defaultImage
       var qq = GET_IMAGES.replace('TAXON', taxon)
       axiosRetry(axios, { retries: 5, retryDelay: (retryCount) => {
-  return retryCount * 200;
-} });
+        return retryCount * 200;
+      } });
       promises[index] = axios.get('https://query.wikidata.org/sparql',{
         headers: {'Accept': 'application/sparql-results+json'},
         params: {
@@ -187,12 +187,6 @@ function retrieveImages(animals){
         }
       })
       .then(async function (response){
-        await sleep(50)
-        if (response.data.results.bindings[0] == undefined){
-          var im = defaultImage;
-          array[index].image = im
-          return im
-        }
         var im = response.data.results.bindings[0].image.value
         array[index].image = im
         return im
@@ -200,7 +194,6 @@ function retrieveImages(animals){
       .catch(function (error) {
         console.log(error);
       })
-      await sleep(50)
       array[index].animal = item.animal.value;
       array[index].name = item.name.value;
       array[index].taxon = taxon

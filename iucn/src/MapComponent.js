@@ -11,43 +11,28 @@ const MyMapComponent = compose(
   }),
   withScriptjs,
   withGoogleMap
-)((props) =>
-  <GoogleMap
-    defaultZoom={2}
-    defaultCenter={{ lat: 0.0, lng: 0.0 }}
-  >
-    {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} onClick={props.onMarkerClick} />}
-  </GoogleMap>
+)((props) => {
+  console.log(props)
+  const warPoints = props.wars.map(war => {
+    let warName = war.lat.value+','+war.lng.value
+    let radius = '250'
+    let latlng = war.lat.value+','+war.lng.value+','+radius
+    return (
+       <Marker position={{ lat: parseFloat(war.lat.value), lng: parseFloat(war.lng.value) }}
+       onClick={props.onMarkerClick.bind(this,latlng,radius,warName)} />
+     )})
+
+  return (
+    <GoogleMap
+      defaultZoom={3}
+      defaultCenter={{ lat: 25, lng: 25 }}
+    >
+    {props.isMarkerShown && warPoints}
+
+    </GoogleMap>
+  )
+}
 );
 
-class MyFancyComponent extends React.PureComponent {
-  state = {
-    isMarkerShown: false,
-  }
-
-  componentDidMount() {
-    this.delayedShowMarker()
-  }
-
-  delayedShowMarker = () => {
-    setTimeout(() => {
-      this.setState({ isMarkerShown: true })
-    }, 3000)
-  }
-
-  handleMarkerClick = () => {
-    this.setState({ isMarkerShown: false })
-    this.delayedShowMarker()
-  }
-
-  render() {
-    return (
-      <MyMapComponent
-        isMarkerShown={this.state.isMarkerShown}
-        onMarkerClick={this.handleMarkerClick}
-      />
-    )
-  }
-}
 
 export default MyMapComponent;

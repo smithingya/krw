@@ -15,6 +15,7 @@ import CardContent from '@material-ui/core/CardContent';
 import {connect} from 'react-redux';
 import {clickedRetrieval} from '../actions/retrieveActions'
 
+
 const styles = theme => ({
   root: {
     minHeight: 0,
@@ -43,6 +44,7 @@ function InfoCard(props){
   <br /><br />
   Selecting the UN Peacekeeping Missions option from the dropdown, allows you to select a current Peacekeeping Mission and input a radius.
   Animals threatened by war and that are observed within the circle around the headquarters of the mission are displayed.
+  Another way to see animals that are threatened by a war and are observed near a UN Peacekeeping Mission is by clicking on the pointers on the map.
   </p>
   var animalDesc = ''
   if (animal.name != undefined){

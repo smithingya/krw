@@ -10,6 +10,7 @@ import { withStyles } from '@material-ui/core/styles';
 import InfoCard from './Components/InfoCard'
 import {connect} from 'react-redux'
 import * as retrieve from './actions/retrieveActions'
+import * as search from './actions/searchActions'
 
 const styles = theme => ({
   root: {
@@ -49,7 +50,13 @@ function App(props) {
             <InfoCard style={{overflow: 'hidden'}}/>
           </Grid>
           <Grid item xs={6} className='Full-width'>
-            <MyMapComponent />
+            <MyMapComponent isMarkerShown={true} wars={wars}
+            onMarkerClick={(latlng,radius,warName) => {
+              dispatch(search.typeChange('war'));
+              dispatch(retrieve.retrieveAnimalsByWar(latlng));
+              dispatch(search.inputChange(radius));
+              dispatch(search.warChange(warName))}
+            }/>
           </Grid>
         </Grid>
       </Grid>

@@ -13,6 +13,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import {connect} from 'react-redux';
 import {retrieveAnimalDetails} from '../actions/retrieveActions'
 import CircularProgress from '@material-ui/core/CircularProgress';
+import defaultImage from '../Img/IUCN_Red_List.svg.png'
 
 const styles = theme => ({
   root: {
@@ -46,7 +47,7 @@ function ResultsList(props) {
           <GridListTile key={tile.taxon}
           onClick={() => dispatch(retrieveAnimalDetails(tile))}
           >
-            <img src={tile.image} alt={tile.name} />
+            <img src={tile.image || defaultImage} alt={tile.name} />
             <GridListTileBar
               title={tile.name}
               subtitle={<span>{tile.taxon}</span>}
