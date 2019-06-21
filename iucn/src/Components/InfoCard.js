@@ -50,17 +50,17 @@ function InfoCard(props){
   if (animal.name != undefined){
     const br = <br />
     var ge = animal.inGenus[Object.keys(animal.inGenus)[0]]
-    var genus = <a href="#" onClick={() => dispatch(clickedRetrieval(ge.link,'rank'))}>{ge.label.toLowerCase()}</a>
+    var genus = <a href="#" onClick={() => dispatch(clickedRetrieval(ge.link,ge.link,'rank'))}>{ge.label.toLowerCase()}</a>
     var fa = animal.inFamily[Object.keys(animal.inFamily)[0]]
-    var family = <a href="#" onClick={() => dispatch(clickedRetrieval(fa.link,'rank'))}>{fa.label.toLowerCase()}</a>
+    var family = <a href="#" onClick={() => dispatch(clickedRetrieval(fa.link,fa.link,'rank'))}>{fa.label.toLowerCase()}</a>
     var or = animal.inOrder[Object.keys(animal.inOrder)[0]]
-    var order = <a href="#" onClick={() => dispatch(clickedRetrieval(or.link,'rank'))}>{or.label.toLowerCase()}</a>
+    var order = <a href="#" onClick={() => dispatch(clickedRetrieval(or.link,or.link,'rank'))}>{or.label.toLowerCase()}</a>
     var cl = animal.inClass[Object.keys(animal.inClass)[0]]
-    var classs = <a href="#" onClick={() => dispatch(clickedRetrieval(cl.link,'rank'))}>{cl.label.toLowerCase()}</a>
+    var classs = <a href="#" onClick={() => dispatch(clickedRetrieval(cl.link,cl.link,'rank'))}>{cl.label.toLowerCase()}</a>
     var ph = animal.inPhylum[Object.keys(animal.inPhylum)[0]]
-    var phylum = <a href="#" onClick={() => dispatch(clickedRetrieval(ph.link,'rank'))}>{ph.label.toLowerCase()}</a>
+    var phylum = <a href="#" onClick={() => dispatch(clickedRetrieval(ph.link,ph.link,'rank'))}>{ph.label.toLowerCase()}</a>
     var ki = animal.inKingdom[Object.keys(animal.inKingdom)[0]]
-    var kingdom = <a href="#" onClick={() => dispatch(clickedRetrieval(ki.link,'rank'))}>{ki.label.toLowerCase()}</a>
+    var kingdom = <a href="#" onClick={() => dispatch(clickedRetrieval(ki.link,ki.link,'rank'))}>{ki.label.toLowerCase()}</a>
     if (animal.hasHabitat != undefined){
       var habitats = Object.keys(animal.hasHabitat).map(function(key, index) {
         var codes = animal.hasHabitat[key].code
@@ -70,7 +70,7 @@ function InfoCard(props){
           out.push({code: codes[index], label:labels[index]})
         })
         return out
-      }).map(habitat => habitat.map(h => (<span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.label,'habitat'))}>{h.label} (code: {h.code})<br /></a></span>)))
+      }).map(habitat => habitat.map(h => (<span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.code,h.label,'habitat'))}>{h.label} (code: {h.code})<br /></a></span>)))
     } else { var habitats = <span>&emsp;unknown <br /></span>}
 
     if (animal.hasThreat != undefined){
@@ -91,7 +91,7 @@ function InfoCard(props){
       var threats = threatsFlattened.map(h => {
         if (h.label != 'unknown' && usedCodes.indexOf(h.code) == -1){
           usedCodes.push(h.code)
-          return <span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.label,'threat'))}>{h.label} (code: {h.code})<br /></a></span>
+          return <span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.code,h.label,'threat'))}>{h.label} (code: {h.code})<br /></a></span>
         }
       })
     } else { var threats = <span>&emsp;no threats known <br /></span>}
@@ -114,17 +114,12 @@ function InfoCard(props){
       var measures = measuresFlattened.map(h => {
         if (h.label != 'unknown' && usedCodes.indexOf(h.code) == -1){
           usedCodes.push(h.code)
-          return <span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.label,'measure'))}>{h.label} (code: {h.code})<br /></a></span>
+          return <span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.code,h.label,'measure'))}>{h.label} (code: {h.code})<br /></a></span>
         }
       })
     } else { var measures = <span>&emsp;no conservation measures in place<br /></span>}
 
     var category = animal.hasCategory[Object.keys(animal.hasCategory)[0]]
-    if (animal.hasEcoregionName != 'NaN'){
-      var eco = <a href="#" onClick={() => dispatch(clickedRetrieval(animal.hasEcoregionName, 'ecoregion'))}>{animal.hasEcoregionName}</a>
-    } else {
-      var eco = 'unknown'
-    }
 
 
     animalDesc = <p style={{marginBottom: '60px'}}> {animal.name} - <i>{animal.taxon}</i> <br />(
@@ -133,7 +128,6 @@ function InfoCard(props){
     Threats: <br /> {threats}
     Conservation measures: <br /> {measures}
     Habitats: <br /> {habitats}
-    WWF Ecoregion: {eco} <br />
     </p>
   }
   return(

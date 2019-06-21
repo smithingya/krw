@@ -25,10 +25,10 @@ export function retrieveWars(){
   }
 }
 
-export function clickedRetrieval(string,type){
+export function clickedRetrieval(code,string,type){
   return function(dispatch){
     dispatch(search.searchPending())
-    dispatch(retrieveAnimalNames(string,type))
+    dispatch(retrieveAnimalNames(code,type))
     if (type == 'rank' || type == 'category'){
       string = string.replace(/.*\//g,'')
     }
