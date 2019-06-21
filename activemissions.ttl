@@ -1,0 +1,325 @@
+@prefix wns1: <http://unmissions.com/resource/vocab/> .
+@prefix wns2: <http://www.w3.org/ns/csvw#> .
+@prefix wns3: <http://purl.org/dc/terms/> .
+@prefix wns4: <http://www.w3.org/ns/prov#> .
+@prefix wns5: <http://schema.org/> .
+@prefix wns6: <http://www.nanopub.org/nschema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://unmissions.com/resource/0> wns1:Mission_Acronym "MINURSO"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "111"^^xsd:string ;
+    wns1:hasLatitude "27.1536"^^xsd:string ;
+    wns1:hasLocation "Laayoune"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "-13.2033"^^xsd:string ;
+    wns1:hasMissionName "United Nations Mission for the Referendum in Western Sahara"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "ESH"^^xsd:string ;
+    wns1:hasWebsite "https://minurso.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "20-Apr-00"^^xsd:string ;
+    wns1:hasWorldBankCountryName "AAA"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "AAA"^^xsd:string ;
+    wns1:isInUNHCR_Country "Western Sahara"^^xsd:string .
+
+<http://unmissions.com/resource/1> wns1:Mission_Acronym "MINUSCA"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "CAF"^^xsd:string ;
+    wns1:hasLatitude "4.3667"^^xsd:string ;
+    wns1:hasLocation "Bangui"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "18.5833"^^xsd:string ;
+    wns1:hasMissionName "United Nations Multidimensional Integrated Stabilization Mission in the Central African Republic"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "CAF"^^xsd:string ;
+    wns1:hasWebsite "https://minusca.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "CAF"^^xsd:string ;
+    wns1:hasWorldBankCountryName "Central African Republic"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Central African Republic"^^xsd:string ;
+    wns1:isInUNHCR_Country "Central African Rep."^^xsd:string .
+
+<http://unmissions.com/resource/10> wns1:Mission_Acronym "UNMISS"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "SSD"^^xsd:string ;
+    wns1:hasLatitude "4.85"^^xsd:string ;
+    wns1:hasLocation "Juba"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "31.6"^^xsd:string ;
+    wns1:hasMissionName "United Nations Mission in the Republic of South Sudan"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "SSD"^^xsd:string ;
+    wns1:hasWebsite "https://unmiss.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "SSD"^^xsd:string ;
+    wns1:hasWorldBankCountryName "South Sudan"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "South Sudan"^^xsd:string ;
+    wns1:isInUNHCR_Country "South Sudan"^^xsd:string .
+
+<http://unmissions.com/resource/11> wns1:Mission_Acronym "UNMOGIP"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "444"^^xsd:string ;
+    wns1:hasLatitude "33.7167"^^xsd:string ;
+    wns1:hasLocation "Islamabad"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "73.0667"^^xsd:string ;
+    wns1:hasMissionName "United Nations Military Observer Group in India and Pakistan"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "444"^^xsd:string ;
+    wns1:hasWebsite "https://unmogip.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "444"^^xsd:string ;
+    wns1:hasWorldBankCountryName "DDD"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "DDD"^^xsd:string ;
+    wns1:isInUNHCR_Country "DDD"^^xsd:string .
+
+<http://unmissions.com/resource/12> wns1:Mission_Acronym "UNTSO"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "555"^^xsd:string ;
+    wns1:hasLatitude "31.7833"^^xsd:string ;
+    wns1:hasLocation "Jerusalem"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "35.2167"^^xsd:string ;
+    wns1:hasMissionName "United Nations Truce Supervision Organization"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "555"^^xsd:string ;
+    wns1:hasWebsite "https://untso.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "555"^^xsd:string ;
+    wns1:hasWorldBankCountryName "EEE"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "EEE"^^xsd:string ;
+    wns1:isInUNHCR_Country "EEE"^^xsd:string .
+
+<http://unmissions.com/resource/13> wns1:Mission_Acronym "MINUJUSTH"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "HTI"^^xsd:string ;
+    wns1:hasLatitude "NULL"^^xsd:string ;
+    wns1:hasLocation "NULL"^^xsd:string ;
+    wns1:hasLocationType "NULL"^^xsd:string ;
+    wns1:hasLongitude "NULL"^^xsd:string ;
+    wns1:hasMissionName "United Nations Mission for Justice Support in Haiti"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "HTI"^^xsd:string ;
+    wns1:hasWebsite "https://minujusth.unmissions.org/en"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "HTI"^^xsd:string ;
+    wns1:hasWorldBankCountryName "Haiti"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Haiti"^^xsd:string ;
+    wns1:isInUNHCR_Country "Haiti"^^xsd:string .
+
+<http://unmissions.com/resource/2> wns1:Mission_Acronym "MINUSMA"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "MLI"^^xsd:string ;
+    wns1:hasLatitude "12.65"^^xsd:string ;
+    wns1:hasLocation "Bamako"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "-8"^^xsd:string ;
+    wns1:hasMissionName "United Nations Multidimensional Integrated Stabilization Mission in Mali"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "MLI"^^xsd:string ;
+    wns1:hasWebsite "https://minusma.unmissions.org"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "MLI"^^xsd:string ;
+    wns1:hasWorldBankCountryName "Mali"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Mali"^^xsd:string ;
+    wns1:isInUNHCR_Country "Mali"^^xsd:string .
+
+<http://unmissions.com/resource/3> wns1:Mission_Acronym "MONUSCO"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "COD"^^xsd:string ;
+    wns1:hasLatitude "-4.325"^^xsd:string ;
+    wns1:hasLocation "Kinshasa"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "15.3222"^^xsd:string ;
+    wns1:hasMissionName "United Nations Organization Stabilization Mission in the Democratic Republic of the Congo"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "COD"^^xsd:string ;
+    wns1:hasWebsite "https://monusco.unmissions.org/en"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "COD"^^xsd:string ;
+    wns1:hasWorldBankCountryName "Congo, Dem. Rep."^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Democratic Republic of Congo"^^xsd:string ;
+    wns1:isInUNHCR_Country "Dem. Rep. of the Congo"^^xsd:string .
+
+<http://unmissions.com/resource/4> wns1:Mission_Acronym "UNAMID"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "SDN"^^xsd:string ;
+    wns1:hasLatitude "13.6306"^^xsd:string ;
+    wns1:hasLocation "Al Fashir"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "25.35"^^xsd:string ;
+    wns1:hasMissionName "African Union-United Nations Hybrid Operation in Darfur"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "222"^^xsd:string ;
+    wns1:hasWebsite "https://unamid.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "222"^^xsd:string ;
+    wns1:hasWorldBankCountryName "BBB"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Sudan"^^xsd:string ;
+    wns1:isInUNHCR_Country "BBB"^^xsd:string .
+
+<http://unmissions.com/resource/5> wns1:Mission_Acronym "UNDOF"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "SYR"^^xsd:string ;
+    wns1:hasLatitude "33.2367"^^xsd:string ;
+    wns1:hasLocation "Camp Faouar"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "35.9211"^^xsd:string ;
+    wns1:hasMissionName "United Nations Disengagement Observer Force"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "SYR"^^xsd:string ;
+    wns1:hasWebsite "https://undof.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "777"^^xsd:string ;
+    wns1:hasWorldBankCountryName "GGG"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Syria"^^xsd:string ;
+    wns1:isInUNHCR_Country "Syrian Arab Rep."^^xsd:string .
+
+<http://unmissions.com/resource/6> wns1:Mission_Acronym "UNFICYP"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "CYP"^^xsd:string ;
+    wns1:hasLatitude "35.1667"^^xsd:string ;
+    wns1:hasLocation "Nicosia"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "33.3667"^^xsd:string ;
+    wns1:hasMissionName "United Nations Peacekeeping Force in Cyprus"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "CYP"^^xsd:string ;
+    wns1:hasWebsite "https://unficyp.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "CYP"^^xsd:string ;
+    wns1:hasWorldBankCountryName "Cyprus"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Cyprus"^^xsd:string ;
+    wns1:isInUNHCR_Country "Cyprus"^^xsd:string .
+
+<http://unmissions.com/resource/7> wns1:Mission_Acronym "UNIFIL"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "LBN"^^xsd:string ;
+    wns1:hasLatitude "33.12"^^xsd:string ;
+    wns1:hasLocation "An Naqurah"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "35.1342"^^xsd:string ;
+    wns1:hasMissionName "United Nations Interim Force in Lebanon"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "LBN"^^xsd:string ;
+    wns1:hasWebsite "https://unifil.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "LBN"^^xsd:string ;
+    wns1:hasWorldBankCountryName "Lebanon"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Lebanon"^^xsd:string ;
+    wns1:isInUNHCR_Country "Lebanon"^^xsd:string .
+
+<http://unmissions.com/resource/8> wns1:Mission_Acronym "UNISFA"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "CCC"^^xsd:string ;
+    wns1:hasLatitude "9.6"^^xsd:string ;
+    wns1:hasLocation "Abyei"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "28.4333"^^xsd:string ;
+    wns1:hasMissionName "United Nations Organization Interim Security Force for Abyei"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "333"^^xsd:string ;
+    wns1:hasWebsite "https://unisfa.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "333"^^xsd:string ;
+    wns1:hasWorldBankCountryName "CCC"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "333"^^xsd:string ;
+    wns1:isInUNHCR_Country "CCC"^^xsd:string .
+
+<http://unmissions.com/resource/9> wns1:Mission_Acronym "UNMIK"^^xsd:string ;
+    wns1:hasACLEDCountryISO3Code "SRB"^^xsd:string ;
+    wns1:hasLatitude "42.6667"^^xsd:string ;
+    wns1:hasLocation "Pristina"^^xsd:string ;
+    wns1:hasLocationType "HQ"^^xsd:string ;
+    wns1:hasLongitude "21.1667"^^xsd:string ;
+    wns1:hasMissionName "United Nations Interim Administration Mission in Kosovo"^^xsd:string ;
+    wns1:hasUNHCRCountryISO3Code "SRB"^^xsd:string ;
+    wns1:hasWebsite "https://unmik.unmissions.org/"^^xsd:string ;
+    wns1:hasWorldBankCountryISO3Code "666"^^xsd:string ;
+    wns1:hasWorldBankCountryName "FFF"^^xsd:string ;
+    wns1:isActive "Yes"^^xsd:string ;
+    wns1:isInACLEDCountry "Serbia and Kosovo"^^xsd:string ;
+    wns1:isInUNHCR_Country "Serbia and Kosovo"^^xsd:string .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6/nanopublication/b5dabc3c/2019-05-07T10:26> a wns6:Nanopublication ;
+    wns6:hasAssertion <http://unmissions.com/resource/coredata_activepkomissiowns6/assertion/b5dabc3c/2019-05-07T10:26> ;
+    wns6:hasProvenance <http://unmissions.com/resource/coredata_activepkomissiowns6/provenance/b5dabc3c/2019-05-07T10:26> ;
+    wns6:hasPublicationInfo <http://unmissions.com/resource/coredata_activepkomissiowns6/pubinfo/b5dabc3c/2019-05-07T10:26> ;
+    wns4:generatedAtTime "2019-05-07T10:26:00"^^xsd:dateTime ;
+    wns4:wasGeneratedBy <https://github.com/CLARIAH/wp4-converters> .
+
+<http://unmissions.com/resource/__row_> wns4:wasDerivedFrom "http://unmissions.com/resource/{_row}"^^xsd:string .
+
+<http://unmissions.com/resource/b5dabc3cc4b0cb36bc84082df6625477f8993ce8> wns1:path "coredata_activepkomissiowns6.csv"^^xsd:string ;
+    wns1:sha1_hash "b5dabc3cc4b0cb36bc84082df6625477f8993ce8"^^xsd:string .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv> wns3:license <http://opendefinition.org/licenses/cc-by/> ;
+    wns3:modified "2019-05-07"^^xsd:date ;
+    wns3:publisher [ wns5:name "CLARIAH Structured Data Hub - Datalegend"@en ;
+            wns5:url <http://datalegend.net/> ] ;
+    wns3:title "coredata_activepkomissiowns6.csv"@en ;
+    wns2:dialect [ wns2:delimiter "," ;
+            wns2:encoding "ascii" ;
+            wns2:quoteChar "\"" ] ;
+    wns2:tableSchema [ wns2:aboutUrl <http://unmissions.com/resource/__row_> ;
+            wns2:column ( <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/Mission_Acronym> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasMissionName> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/isActive> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLocation> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLocationType> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLongitude> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLatitude> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasWebsite> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasWorldBankCountryISO3Code> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasWorldBankCountryName> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasUNHCRCountryISO3Code> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/isInUNHCR_Country> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasACLEDCountryISO3Code> <http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/isInACLEDCountry> ) ;
+            wns2:primaryKey "Mission_Acronym" ] ;
+    wns2:url "coredata_activepkomissiowns6.csv"^^xsd:anyURI .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/Mission_Acronym> wns3:description "Mission_Acronym"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "Mission_Acronym" ;
+    wns2:title "Mission_Acronym"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasACLEDCountryISO3Code> wns3:description "hasACLEDCountryISO3Code"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasACLEDCountryISO3Code" ;
+    wns2:title "hasACLEDCountryISO3Code"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLatitude> wns3:description "hasLatitude"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasLatitude" ;
+    wns2:title "hasLatitude"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLocation> wns3:description "hasLocation"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasLocation" ;
+    wns2:title "hasLocation"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLocationType> wns3:description "hasLocationType"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasLocationType" ;
+    wns2:title "hasLocationType"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasLongitude> wns3:description "hasLongitude"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasLongitude" ;
+    wns2:title "hasLongitude"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasMissionName> wns3:description "hasMissionName"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasMissionName" ;
+    wns2:title "hasMissionName"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasUNHCRCountryISO3Code> wns3:description "hasUNHCRCountryISO3Code"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasUNHCRCountryISO3Code" ;
+    wns2:title "hasUNHCRCountryISO3Code"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasWebsite> wns3:description "hasWebsite"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasWebsite" ;
+    wns2:title "hasWebsite"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasWorldBankCountryISO3Code> wns3:description "hasWorldBankCountryISO3Code"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasWorldBankCountryISO3Code" ;
+    wns2:title "hasWorldBankCountryISO3Code"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/hasWorldBankCountryName> wns3:description "hasWorldBankCountryName"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "hasWorldBankCountryName" ;
+    wns2:title "hasWorldBankCountryName"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/isActive> wns3:description "isActive"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "isActive" ;
+    wns2:title "isActive"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/isInACLEDCountry> wns3:description "isInACLEDCountry"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "isInACLEDCountry" ;
+    wns2:title "isInACLEDCountry"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6.csv/column/isInUNHCR_Country> wns3:description "isInUNHCR_Country"@en ;
+    wns2:datatype xsd:string ;
+    wns2:name "isInUNHCR_Country" ;
+    wns2:title "isInUNHCR_Country"@en .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6/assertion/b5dabc3c/2019-05-07T10:26> a wns6:Assertion ;
+    wns4:generatedAtTime "2019-05-07T10:26:00"^^xsd:dateTime ;
+    wns4:wasDerivedFrom <http://unmissions.com/resource/b5dabc3cc4b0cb36bc84082df6625477f8993ce8>,
+        <http://unmissions.com/resource/coredata_activepkomissiowns6.csv> .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6/provenance/b5dabc3c/2019-05-07T10:26> a wns6:Provenance .
+
+<http://unmissions.com/resource/coredata_activepkomissiowns6/pubinfo/b5dabc3c/2019-05-07T10:26> a wns6:PublicationInfo .
+

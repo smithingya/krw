@@ -37,8 +37,12 @@ function InfoCard(props){
   if (animal.image == undefined){
     animal.image = image
   }
-  const noAnimal = <p>Use the searchfield to find animals with a certain name, threat type, habitat or ecoregion, or conservation measure.
-  The endangerment category and the taxonomic subdivisions are not searchable at this time, but clicking on a link of this kind, will show you the animals that are in the same group.
+  const noAnimal = <p>Use the searchfield to find animals with a certain name, threat type, habitat, or conservation measure.
+  The endangerment category, ecoregion and the taxonomic subdivisions are not searchable at this time,
+  but clicking on a link of this kind, will show you the animals that are in the same group.
+  <br /><br />
+  Selecting the UN Peacekeeping Missions option from the dropdown, allows you to select a current Peacekeeping Mission and input a radius.
+  Animals threatened by war and that are observed within the circle around the headquarters of the mission are displayed.
   </p>
   var animalDesc = ''
   if (animal.name != undefined){
@@ -64,7 +68,7 @@ function InfoCard(props){
           out.push({code: codes[index], label:labels[index]})
         })
         return out
-      }).map(habitat => habitat.map(h => (<span>&emsp;<a href="#" onClick={() => dispatch(clickedRetrieval(h.label,'habitat'))}>{h.label} (code: {h.code})<br /></a></span>)))
+      }).map(habitat => habitat.map(h => (<span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.label,'habitat'))}>{h.label} (code: {h.code})<br /></a></span>)))
     } else { var habitats = <span>&emsp;unknown <br /></span>}
 
     if (animal.hasThreat != undefined){
@@ -85,7 +89,7 @@ function InfoCard(props){
       var threats = threatsFlattened.map(h => {
         if (h.label != 'unknown' && usedCodes.indexOf(h.code) == -1){
           usedCodes.push(h.code)
-          return <span>&emsp;<a href="#" onClick={() => dispatch(clickedRetrieval(h.label,'threat'))}>{h.label} (code: {h.code})<br /></a></span>
+          return <span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.label,'threat'))}>{h.label} (code: {h.code})<br /></a></span>
         }
       })
     } else { var threats = <span>&emsp;no threats known <br /></span>}
@@ -108,10 +112,10 @@ function InfoCard(props){
       var measures = measuresFlattened.map(h => {
         if (h.label != 'unknown' && usedCodes.indexOf(h.code) == -1){
           usedCodes.push(h.code)
-          return <span>&emsp;<a href="#" onClick={() => dispatch(clickedRetrieval(h.label,'measure'))}>{h.label} (code: {h.code})<br /></a></span>
+          return <span>&emsp;<a href="#" key={h.label} onClick={() => dispatch(clickedRetrieval(h.label,'measure'))}>{h.label} (code: {h.code})<br /></a></span>
         }
       })
-    } else { var threats = <span>&emsp;no conservation measures in place<br /></span>}
+    } else { var measures = <span>&emsp;no conservation measures in place<br /></span>}
 
     var category = animal.hasCategory[Object.keys(animal.hasCategory)[0]]
     if (animal.hasEcoregionName != 'NaN'){

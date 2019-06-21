@@ -8,6 +8,8 @@ import ResultsList from './Components/ResultsList'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import InfoCard from './Components/InfoCard'
+import {connect} from 'react-redux'
+import * as retrieve from './actions/retrieveActions'
 
 const styles = theme => ({
   root: {
@@ -26,7 +28,11 @@ const styles = theme => ({
 });
 
 function App(props) {
-  const { classes } = props;
+  const { classes,dispatch,wars } = props;
+  if (wars.length < 1){
+    dispatch(retrieve.retrieveWars())
+  }
+
   return (
     <div className="App" className='Full-height' style={{overflow: 'hidden'}}>
       <Grid container spacing={0} className='Full-height' style={{overflow: 'hidden'}}>
@@ -51,4 +57,10 @@ function App(props) {
   );
 }
 
-export default withStyles(styles)(App);
+function mapStateToProps(state) {
+  return {
+    wars: state.animals.wars
+  }
+}
+
+export default connect(mapStateToProps)(withStyles(styles)(App));

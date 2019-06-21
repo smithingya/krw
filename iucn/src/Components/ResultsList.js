@@ -12,6 +12,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import {connect} from 'react-redux';
 import {retrieveAnimalDetails} from '../actions/retrieveActions'
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const styles = theme => ({
   root: {
@@ -31,12 +32,13 @@ const styles = theme => ({
 
 
 function ResultsList(props) {
-  const { classes, animalList, dispatch } = props;
-  console.log(animalList)
+  const { classes, animalList, dispatch, pending } = props;
 
   return(
     <div className={classes.root}>
     <div className='Full-width'>
+    {(animalList.length < 1) && !pending && (<p>No results, try a new search</p>)}
+    {pending && <CircularProgress className={classes.progress} />}
      <GridList cellHeight={160} className={classes.gridList} cols={3}>
      {animalList.map(tile => {
        // console.log(tile.image)
@@ -68,7 +70,8 @@ ResultsList.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    animalList: state.animals.list
+    animalList: state.animals.list,
+    pending: state.search.searching
   }
 }
 
